@@ -1,0 +1,293 @@
+<html><head>
+<title>浙江省海洋经济模型展示系统-海洋经济发展环境监测模型</title>
+<link rel="stylesheet" href="pic/css/bootstrap.min.css">
+<script src="pic/js/echarts.min.js"></script>
+<script type="text/javascript" src="scripts/jquery/jquery-1.7.1.js"></script>
+<link href="style/authority/basic_layout.css" rel="stylesheet" type="text/css">
+<link href="style/authority/common_style.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
+<script type="text/javascript" src="scripts/authority/commonAll.js"></script>
+<script type="text/javascript" src="scripts/fancybox/jquery.fancybox-1.3.4.js"></script>
+<script type="text/javascript" src="scripts/fancybox/jquery.fancybox-1.3.4.pack.js"></script>
+<link rel="stylesheet" type="text/css" href="style/authority/jquery.fancybox-1.3.4.css" media="screen"></link>
+<script type="text/javascript" src="scripts/artDialog/artDialog.js?skin=default"></script>
+</head><!--[if IE 6]><script type="text/javascript" src="http://115.238.45.165:8003/modelPlatform/res/layer/skin/png.js"></script><![endif]-->
+
+<body>
+        <div id="maindiv" style="padding:10px 5px 0;">
+                <div style="padding:0 0 6px 0;">
+                        <form id="zform" action="zjEnvironmentDev/index.do" method="post">
+                                <!--用于翻页  -->
+                                <input type="hidden" name="pageNum" id="pageNum" value="1">
+                                    <div class="search_div">
+                                        <span class="hei12" style="padding-top:3px;float:left;margin-right:10px;">年份</span>
+                                        <select id="year" name="year" class="select" style="width:60px;height:22px;">
+                                            <option value="" selected="selected">全部</option>
+                                            
+                                                <option value="2015">2015</option>
+                                            
+                                                <option value="2014">2014</option>
+                                            
+                                                <option value="2013">2013</option>
+                                            
+                                                <option value="2012">2012</option>
+                                            
+                                                <option value="2011">2011</option>
+                                            
+                                                <option value="2010">2010</option>
+                                            
+                                                <option value="2009">2009</option>
+                                            
+                                                <option value="2008">2008</option>
+                                            
+                                                <option value="2007">2007</option>
+                                            
+                                                <option value="2006">2006</option>
+                                            
+                                        </select>
+                                        <img class="divalign" style="cursor: pointer" id="searchbtn" src="images/a_search.gif" width="43" height="22">
+                                    </div>
+                                </form>
+                            </div>
+                <div class="contentdiv">
+                    <table class="table" cellspacing="0" cellpadding="0" width="100%" align="center" border="0">
+                        <caption class="title">浙江省海洋经济发展环境监测模型数据</caption>
+                        
+                        <tbody><tr>
+                            <th width="10%"><strong>年份</strong>
+                            </th>
+                            <th width="30%"><strong>近岸海域利用率</strong>
+                            </th>
+                            <th width="30%"><strong>近岸海域海水水质</strong>
+                            </th>
+                            <th width="30%"><strong>海洋保护区占海域面积比重</strong>
+                            </th>
+                        </tr>
+                            <tr>
+                                <td class="hei12" height="24">2006</td>
+                                <td class="hei12" height="24">
+                                    15.10%
+                                    
+                                </td>
+                                <td class="hei12" height="24">
+                                    
+                                    
+                                </td>
+                                <td class="hei12" height="24">
+                                    15.37%
+                                    
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td class="hei12" height="24">2007</td>
+                                <td class="hei12" height="24">
+                                    2.55%
+                                    
+                                </td>
+                                <td class="hei12" height="24">
+                                    27.28%
+                                    
+                                </td>
+                                <td class="hei12" height="24">
+                                    9.33%
+                                    
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td class="hei12" height="24">2008</td>
+                                <td class="hei12" height="24">
+                                    2.58%
+                                    
+                                </td>
+                                <td class="hei12" height="24">
+                                    24.71%
+                                    
+                                </td>
+                                <td class="hei12" height="24">
+                                    5.17%
+                                    
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td class="hei12" height="24">2009</td>
+                                <td class="hei12" height="24">
+                                    2.34%
+                                    
+                                </td>
+                                <td class="hei12" height="24">
+                                    33.22%
+                                    
+                                </td>
+                                <td class="hei12" height="24">
+                                    0.86%
+                                    
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td class="hei12" height="24">2010</td>
+                                <td class="hei12" height="24">
+                                    0.96%
+                                    
+                                </td>
+                                <td class="hei12" height="24">
+                                    32.84%
+                                    
+                                </td>
+                                <td class="hei12" height="24">
+                                    0.86%
+                                    
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td class="hei12" height="24">2011</td>
+                                <td class="hei12" height="24">
+                                    2.13%
+                                    
+                                </td>
+                                <td class="hei12" height="24">
+                                    25.34%
+                                    
+                                </td>
+                                <td class="hei12" height="24">
+                                    0.65%
+                                    
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td class="hei12" height="24">2012</td>
+                                <td class="hei12" height="24">
+                                    0.65%
+                                    
+                                </td>
+                                <td class="hei12" height="24">
+                                    24.86%
+                                    
+                                </td>
+                                <td class="hei12" height="24">
+                                    0.77%
+                                    
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td class="hei12" height="24">2013</td>
+                                <td class="hei12" height="24">
+                                    1.72%
+                                    
+                                </td>
+                                <td class="hei12" height="24">
+                                    26.37%
+                                    
+                                </td>
+                                <td class="hei12" height="24">
+                                    1.01%
+                                    
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td class="hei12" height="24">2014</td>
+                                <td class="hei12" height="24">
+                                    15.10%
+                                    
+                                </td>
+                                <td class="hei12" height="24">
+                                    19.47%
+                                    
+                                </td>
+                                <td class="hei12" height="24">
+                                    1.01%
+                                    
+                                </td>
+                            </tr>
+                        
+                    </tbody></table>
+                    <!-- 翻页控件 -->
+
+            <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+            <title>翻页控件</title>
+            <script type="text/javascript">
+                //跳转到指定页
+                function gotopage() {
+                    var pageNumer = $("#pageNumer").val();
+                    $("#pageNum").val(pageNumer);
+                    $("#zform").submit();
+                }
+                //返回第一页
+                function gotofirst() {
+                    $("#pageNum").val("1");
+                    $("#zform").submit();
+                }
+                //上一页
+                function previous(previouspage){
+                    $("#pageNum").val(previouspage);
+                    $("#zform").submit();
+                }
+                //下一页
+                function next(nextpage){
+                    $("#pageNum").val(nextpage);
+                    $("#zform").submit();
+                }
+                //返回最后一页
+                function gotolast(lastpage){
+                    $("#pageNum").val(lastpage);
+                    $("#zform").submit();
+                }
+            </script>
+            
+            
+                <div class="hei12" style="display: inline-block;width: 100%;">
+                    <div style="float:left;padding:5px;">共有 9 条&nbsp;每页 10 条</div>
+                    <div style="float:right;padding:5px 0 5px 5px;">
+                        
+                            <img src="images/pref/page/first_hui.gif" title="首页" width="10" height="9" border="0" align="bottom">&nbsp;&nbsp;
+                        
+                        
+                        
+                            <img src="images/pref/page/previous_hui.gif" title="上一页" width="10" height="9" border="0" align="bottom">&nbsp;&nbsp;
+                        
+                        
+                        
+                            <img src="images/pref/page/next_hui.gif" title="下一页" width="10" height="9" border="0" align="bottom">&nbsp;&nbsp;
+                        
+                        
+                        
+                            <img src="images/pref/page/last_hui.gif" title="末页" width="10" height="9" border="0" align="bottom">&nbsp;&nbsp;
+                        
+                        
+                        当前 1/1 页 转到第<input name="pageNumer" type="text" id="pageNumer" value="1" style="width:20px; font-family:'宋体'; font-size:12px;">页
+                        <input type="button" value="转" style="width:30px; font-family:'宋体'; font-size:12px;" onclick=""> 
+                    </div>
+                </div>
+            
+            
+                            
+                    <script type="text/javascript">
+                        function showInfoDiv(){
+                            $("#info_div_flag_show").toggle();
+                            $("#info_div_flag_hide").toggle();
+                            $("#info_div").toggle();
+                        }
+                    </script>
+                    <div class="hei12" style="padding-bottom:5px;">
+                        <p style="margin-top:10px;"><b>公式说明</b>
+                        <span onclick="showInfoDiv()" title="展开" id="info_div_flag_show" style="cursor:pointer;">+</span>
+                        <span onclick="showInfoDiv()" title="收起" id="info_div_flag_hide" style="display:none;cursor:pointer;">-</span>
+                        </p>
+                        <div id="info_div" style="display:none;">
+                            <p>近岸海域利用率 = 累计确权海域面积/内水和领海面积×100%</p>
+                            <p>近岸海域海水水质 = （清洁海域面积 + 较清洁海域面积）/（清洁海域面积 + 较清洁海域面积 + 轻度污染海域面积 + 中度污染海域面积 + 严重污染海域面积）×100%</p>
+                            <p>海洋保护区占海域面积比重 = 海洋保护区面积/管辖海域面积×100%</p>
+                        </div>
+                    </div>
+                </div>
+            </div>   
+
+</body>
+</html>

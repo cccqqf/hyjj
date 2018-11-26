@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>海洋产业集聚区与地区经济的协调发展评估模型</title>
+
+    <link rel="stylesheet" href="pic/css/bootstrap.min.css">
+    <script src="pic/js/echarts.min.js"></script>
+    <script type="text/javascript" src="scripts/jquery/jquery-1.7.1.js"></script>
+    <link href="style/authority/basic_layout.css" rel="stylesheet" type="text/css">
+    <link href="style/authority/common_style.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <script type="text/javascript" src="scripts/authority/commonAll.js"></script>
+    <script type="text/javascript" src="scripts/fancybox/jquery.fancybox-1.3.4.js"></script>
+    <script type="text/javascript" src="scripts/fancybox/jquery.fancybox-1.3.4.pack.js"></script>
+    <link rel="stylesheet" type="text/css" href="style/authority/jquery.fancybox-1.3.4.css" media="screen"></link>
+    <script type="text/javascript" src="scripts/artDialog/artDialog.js?skin=default"></script>
+    <style>
+        .row {
+            margin:20px 0 15px 0;
+        }
+    </style>
+</head>
+<body>
+<div>
+    <!--大container-->
+
+
+    <div class="row">
+        <div class="col-md-12">
+            <div class="ui_content">
+                <div class="ui_tb">
+                    <table class="table" cellspacing="0" cellpadding="0" width="100%" align="center" border="0">
+
+                        <tr>
+                            <th width="4%"><strong>序号</strong></th>
+                            <th width="12%"><strong>年份</strong></th>
+                            <th width="12%"><strong>耦合度</strong></th>
+                            <th width="12%"><strong>耦合协调度</strong></th>
+                            <th width="12%"><strong>E<sub>1</sub>与E<sub>2</sub>的比值</strong></th>
+                            <th width="12%"><strong>耦合阶段</strong></th>
+                            <th width="12%"><strong>发展类型</strong></th>
+                        </tr>
+
+                        <tr
+                                class="row_bai">
+                            <td height="24" class="hei12">1</td>
+                            <td height="24" class="hei12">2011</td>
+                            <td height="24" class="hei12">0.98</td>
+                            <td height="24" class="hei12">1.04</td>
+                            <td height="24" class="hei12">0.83</td>
+                            <td height="24" class="hei12">良好协调</td>
+                            <td height="24" class="hei12">同步发展型</td>
+                        </tr>
+
+                        <tr class="row_bg"
+                        >
+                            <td height="24" class="hei12">2</td>
+                            <td height="24" class="hei12">2012</td>
+                            <td height="24" class="hei12">0.91</td>
+                            <td height="24" class="hei12">1.13</td>
+                            <td height="24" class="hei12">1.55</td>
+                            <td height="24" class="hei12">良好协调</td>
+                            <td height="24" class="hei12">海洋产业主导型</td>
+                        </tr>
+
+                        <tr
+                                class="row_bai">
+                            <td height="24" class="hei12">3</td>
+                            <td height="24" class="hei12">2013</td>
+                            <td height="24" class="hei12">0.82</td>
+                            <td height="24" class="hei12">1.14</td>
+                            <td height="24" class="hei12">1.90</td>
+                            <td height="24" class="hei12">良好协调</td>
+                            <td height="24" class="hei12">海洋产业主导型</td>
+                        </tr>
+
+
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+
+
+        <div class="col-md-12" id="main5" style="height:400px"></div>
+
+    </div>
+
+    <script type="text/javascript">
+        // 基于准备好的dom，初始化echarts实例
+
+
+
+        var myChart5=echarts.init(document.getElementById('main5'));
+        var labelOption = {
+            normal: {
+                show: true,
+                position: 'insideBottom',
+                distance: 15,
+                align: 'left',
+                verticalAlign: 'middle',
+                rotate: 90,
+                formatter: '{c} ',
+                fontSize: 16,
+                rich: {
+                    name: {
+                        textBorderColor: '#fff'
+                    }
+                }
+            }
+        };
+
+        var option5 = {
+            title: {
+                text: '舟山海洋产业集聚区与舟山市经济增长耦合度及耦合协调度变化情况',
+                left:'center'
+            },
+            color: ['#003366', '#006699', '#4cabce', '#e5323e'],
+            tooltip: {
+                trigger: 'axis',
+                axisPointer: {
+                    type: 'shadow'
+                }
+            },
+            legend: {
+                data: ['耦合度', '耦合协调度'],
+                bottom:0
+            },
+            toolbox: {
+                show: true,
+                orient: 'vertical',
+                left: 'right',
+                top: 'center',
+                feature: {
+                    mark: {show: true},
+
+                    magicType: {show: true, type: ['line', 'bar', 'stack', 'tiled']},
+                    restore: {show: true},
+                    saveAsImage: {show: true}
+                }
+            },
+            calculable: true,
+            xAxis: [
+                {
+                    type: 'category',
+                    axisTick: {show: false},
+                    data: ['2011', '2012','2013']
+                }
+            ],
+            yAxis: [
+                {
+                    type: 'value'
+                }
+            ],
+            series: [
+                {
+                    name: '耦合度',
+                    type: 'bar',
+                    barGap: 0,
+                    label: labelOption,
+                    data: [0.98,0.91,0.82]
+                },
+                {
+                    name: '耦合协调度',
+                    type: 'bar',
+                    label: labelOption,
+                    data: [1.04,1.13,1.14]
+
+                }
+
+            ]
+        };
+        myChart5.setOption(option5);
+    </script>
+
+</body>
+</html>

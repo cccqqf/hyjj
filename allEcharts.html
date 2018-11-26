@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>所有Echarts合集</title>
+		
+		<link rel="stylesheet" href="pic/css/bootstrap.min.css">
+		<script src="pic/js/echarts.min.js"></script>
+		<script type="text/javascript" src="scripts/jquery/jquery-1.7.1.js"></script>
+		<script type="text/javascript" src="https://api.map.baidu.com/api?v=2.0&ak=clSyDjqhtfDph27z7cybQjkIwGsrRYQZ"></script>
+		<link href="style/authority/basic_layout.css" rel="stylesheet" type="text/css">
+		<link href="style/authority/common_style.css" rel="stylesheet" type="text/css">
+		<script type="text/javascript" src="scripts/authority/commonAll.js"></script>
+		<script type="text/javascript" src="scripts/fancybox/jquery.fancybox-1.3.4.js"></script>
+		<script type="text/javascript" src="scripts/fancybox/jquery.fancybox-1.3.4.pack.js"></script>
+		<link rel="stylesheet" type="text/css" href="style/authority/jquery.fancybox-1.3.4.css" media="screen"></link>
+		<script type="text/javascript" src="scripts/artDialog/artDialog.js?skin=default"></script>
+		<style>
+			.row {
+				margin:20px 0 15px 0;
+			}
+		</style>
+	</head>
+	<body>
+		<div>
+			<!--大container-->
+			<div class="row">
+				<div class="col-md-6" id="main" style="height:600px"></div>
+				<div class="col-md-6" id="main2" style="height:600px"></div>
+			</div>
+			<div class="row">
+				<div class="col-md-6" id="main3" style="height:600px"></div>
+				<div class="col-md-6" id="main4" style="height:600px"></div>
+			</div>
+			<div class="row">
+				<div class="col-md-6" id="main5" style="height:600px"></div>
+				
+			</div>
+		</div>
+			
+		
+	
+	<script type="text/javascript">
+        // 基于准备好的dom，初始化echarts实例
+        var myChart = echarts.init(document.getElementById('main'));
+		var option = {
+			title: {
+				text: '折线图堆叠',
+				x:'center'
+			},
+			tooltip: {
+				trigger: 'axis'
+			},
+			legend: {
+				data:['邮件营销','联盟广告','视频广告','直接访问','搜索引擎'],
+				bottom:10
+			},
+			grid: {
+				left: '3%',
+				right: '4%',
+				bottom: '10%',
+				containLabel: true
+			},
+			toolbox: {
+				feature: {
+					saveAsImage: {}
+				}
+			},
+			xAxis: {
+				type: 'category',
+				
+				data: [ '周一','周二','周三','周四','周五','周六','周日']
+			},
+			yAxis: {
+				type: 'value',
+				axisLabel: {  
+						  formatter: '{value} %'
+						},  
+			},
+			series: [
+				{
+					name:'邮件营销',
+					type:'line',
+					stack: '总量',
+					data:[12, 13, 10, 13, 9, 23, 21],
+					itemStyle: { normal: {label : {show: true,formatter: '{c}%'}}}
+				},
+				{
+					name:'联盟广告',
+					type:'line',
+					stack: '总量',
+					data:[22, 18, 19, 23, 29, 33, 31],
+					itemStyle: { normal: {label : {show: true,formatter: '{c}%'}}}
+				},
+				{
+					name:'视频广告',
+					type:'line',
+					stack: '总量',
+					data:[15, 23, 20, 15, 19, 33, 41],
+					itemStyle: { normal: {label : {show: true,formatter: '{c}%'}}}
+				},
+				{
+					name:'直接访问',
+					type:'line',
+					stack: '总量',
+					data:[32, 33, 30, 33, 39, 33, 32],
+					itemStyle: { normal: {label : {show: true,formatter: '{c}%'}}}
+				},
+				{
+					name:'搜索引擎',
+					type:'line',
+					stack: '总量',
+					data:[82, 93, 90, 93, 129, 133, 132],
+					itemStyle: { normal: {label : {show: true,formatter: '{c}%'}}}
+				}
+			],
+			
+		};
+        // 使用刚指定的配置项和数据显示图表。
+        myChart.setOption(option);
+		
+		var myChart2=echarts.init(document.getElementById('main2'));
+		var option2 = {
+			title: {
+				text: '基础雷达图',
+				left:'center'
+			},
+			tooltip: {},
+			legend: {
+				data: ['预算分配（Allocated Budget）', '实际开销（Actual Spending）'],
+				bottom:10
+			},
+			radar: {
+				// shape: 'circle',
+				name: {
+					textStyle: {
+						color: '#fff',
+						backgroundColor: '#999',
+						borderRadius: 3,
+						padding: [3, 5]
+				   }
+				},
+					
+				indicator: [
+				   { name: '销售（sales）', max: 6500},
+				   { name: '管理（Administration）', max: 16000},
+				   { name: '信息技术（Information Techology）', max: 30000},
+				   { name: '客服（Customer Support）', max: 38000},
+				   { name: '研发（Development）', max: 52000},
+				   { name: '市场（Marketing）', max: 25000}
+				]
+			},
+			series: [{
+				name: '预算 vs 开销（Budget vs spending）',
+				type: 'radar',
+				// areaStyle: {normal: {}},
+				data : [
+					{
+						value : [4300, 10000, 28000, 35000, 50000, 19000],
+						name : '预算分配（Allocated Budget）',
+					},
+					 {
+						value : [5000, 14000, 28000, 31000, 42000, 21000],
+						name : '实际开销（Actual Spending）'
+					}
+				]
+			}],
+			toolbox:{
+				feature:{
+					saveAsImage:{}
+				}
+			}
+		};
+		myChart2.setOption(option2);
+	
+	
+		var myChart3=echarts.init(document.getElementById('main3'));
+		var option3={
+			title:{
+				text:'浙江省海洋三次产业结构',
+				left:'center'
+			},
+			tooltip : {
+				trigger: 'axis',
+				axisPointer : {            // 坐标轴指示器，坐标轴触发有效
+					type : 'shadow'        // 默认为直线，可选为：'line' | 'shadow'
+				}
+			},
+			legend: {
+				data: ['海洋第一产业占比', '海洋第二产业占比','海洋第三产业占比'],
+				bottom:10
+			},
+			grid: {
+				left: '3%',
+				right: '4%',
+				bottom: '10%',
+				containLabel: true
+			},
+			xAxis:  {
+				type: 'category',
+				data: ['2006','2007','2008','2009','2010','2011','2012','2013','2014']
+			},
+			yAxis: {
+				max:100,
+				type: 'value',
+				axisLabel: {  
+					formatter: '{value} %'
+				},  
+			},
+
+			series: [
+				{
+					name: '海洋第三产业占比',
+					type: 'bar',
+					stack: '总量',
+					label: {
+						normal: {
+							show: true,
+							position: 'insideRight'
+						}
+					},
+					data: [48.25, 49.06, 51.09, 50.65, 50.05, 50.84, 52.22,53.26,53.28],
+					itemStyle: { normal: {label : {show: true,formatter: '{c}%'}}}
+				},
+				{
+					name: '海洋第二产业占比',
+					type: 'bar',
+					stack: '总量',
+					label: {
+						normal: {
+							show: true,
+							position: 'insideRight'
+						}
+					},
+					data: [41.82, 42.04, 40.78, 41.41, 42.36, 41.29,40.32,39.15,39.29],
+					itemStyle: { normal: {label : {show: true,formatter: '{c}%'}}}
+				},
+				{
+					name: '海洋第一产业占比',
+					type: 'bar',
+					stack: '总量',
+					label: {
+						normal: {
+							show: true,
+							position: 'insideRight'
+						}
+					},
+					data: [9.93,8.9,8.13,7.94,7.6,7.87,7.46,7.59,7.43],
+					itemStyle: { normal: {label : {show: true,formatter: '{c}%'}}}
+				}
+			],
+			toolbox:{
+						feature:{
+							saveAsImage:{}
+						}
+					}
+		};
+	
+		myChart3.setOption(option3);
+		
+		
+		var myChart4=echarts.init(document.getElementById('main4'));
+		
+		var  option4 = {
+			title: {
+				text: '浙江省海洋经济发展水平检测模型',
+				left:'center'
+			},
+			tooltip: {
+				trigger: 'axis',
+				axisPointer: {
+					type: 'cross',
+					label: {
+						backgroundColor: '#283b56'
+					}
+				}
+			},
+			legend: {
+				data:['浙江省GDP增长速度', '浙江省GOP'],
+				bottom:0,
+			},
+			toolbox: {
+				show: true,
+				feature: {
+					saveAsImage: {}
+				}
+			},
+			dataZoom: {
+				show: false,
+				start: 0,
+				end: 100
+			},
+			xAxis: [
+				{
+					type: 'category',
+					boundaryGap: true,
+					data: (function (){
+						var res = [];
+						var len = 8;
+						while (len--) {
+							res.push(2014 - len);
+						}
+						return res;
+					})()
+				},
+				{
+				    show:false,
+					type: 'category',
+					boundaryGap: true,
+					data: (function (){
+						var res = [];
+						var len = 8;
+						while (len--) {
+							res.push(2014 - len);
+						}
+						return res;
+					})()
+				}
+			],
+			yAxis: [
+				{
+					type: 'value',
+					scale: true,
+					name: '百分比',
+					boundaryGap: [0.2, 0.2]
+				},
+				{
+					type: 'value',
+					scale: true,
+					name: 'GOP',
+					boundaryGap: [0.2, 0.2]
+				}
+			],
+			series: [
+				{
+					name:'浙江省GOP',
+					type:'bar',
+					xAxisIndex: 1,
+					yAxisIndex: 1,
+					data:[2343,2677,3001,3774,4451,4958,5405,5758],
+					itemStyle : { normal: {label : {show: true}}}
+				},
+				{
+					name:'浙江省GDP增长速度',
+					type:'line',
+					data:[18.05,14.22,12.12,25.76,17.92,11.39,9.03,6.52],
+					itemStyle : { normal: {label : {show: true}}}
+				}
+			]
+		};
+
+
+		myChart4.setOption(option4);
+
+		
+		var myChart5=echarts.init(document.getElementById('main5'));
+		var labelOption = {
+			normal: {
+				show: true,
+				position: 'insideBottom',
+				distance: 15,
+				align: 'left',
+				verticalAlign: 'middle',
+				rotate: 90,
+				formatter: '{c} ',
+				fontSize: 16,
+				rich: {
+					name: {
+						textBorderColor: '#fff'
+					}
+				}
+			}
+		};
+
+		var option5 = {
+			title: {
+						text: '经济发展指标各分项指数的预测结果',
+						left:'center'
+					},
+			color: ['#003366', '#006699', '#4cabce', '#e5323e'],
+			tooltip: {
+				trigger: 'axis',
+				axisPointer: {
+					type: 'shadow'
+				}
+			},
+			legend: {
+				data: ['2011', '2012', '2013', '2014'],
+				bottom:0
+			},
+			toolbox: {
+				show: true,
+				orient: 'vertical',
+				left: 'right',
+				top: 'center',
+				feature: {
+					mark: {show: true},
+					
+					magicType: {show: true, type: ['line', 'bar', 'stack', 'tiled']},
+					restore: {show: true},
+					saveAsImage: {show: true}
+				}
+			},
+			calculable: true,
+			xAxis: [
+				{
+					type: 'category',
+					axisTick: {show: false},
+					data: ['经济规模指数', '发展效率指数', '优化集聚指数']
+				}
+			],
+			yAxis: [
+				{
+					type: 'value'
+				}
+			],
+			series: [
+				{
+					name: '2011',
+					type: 'bar',
+					barGap: 0,
+					label: labelOption,
+					data: [100,100,100]
+				},
+				{
+					name: '2012',
+					type: 'bar',
+					label: labelOption,
+					data: [110,112,109]
+				},
+				{
+					name: '2013',
+					type: 'bar',
+					label: labelOption,
+					data: [118,116,120]
+				},
+				{
+					name: '2014',
+					type: 'bar',
+					label: labelOption,
+					data: [125,124,127]
+				}
+			]
+		};
+		myChart5.setOption(option5);
+	</script>
+	
+	</body>
+</html>

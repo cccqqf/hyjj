@@ -1,0 +1,172 @@
+<html><head>
+<title>浙江省海洋经济模型展示系统-海洋经济全要素生产率评估模型</title>
+<link rel="stylesheet" href="pic/css/bootstrap.min.css">
+<script src="pic/js/echarts.min.js"></script>
+<script type="text/javascript" src="scripts/jquery/jquery-1.7.1.js"></script>
+<link href="style/authority/basic_layout.css" rel="stylesheet" type="text/css">
+<link href="style/authority/common_style.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
+<script type="text/javascript" src="scripts/authority/commonAll.js"></script>
+<script type="text/javascript" src="scripts/fancybox/jquery.fancybox-1.3.4.js"></script>
+<script type="text/javascript" src="scripts/fancybox/jquery.fancybox-1.3.4.pack.js"></script>
+<link rel="stylesheet" type="text/css" href="style/authority/jquery.fancybox-1.3.4.css" media="screen"></link>
+<script type="text/javascript" src="scripts/artDialog/artDialog.js?skin=default"></script>
+</head><!--[if IE 6]><script type="text/javascript" src="http://115.238.45.165:8003/modelPlatform/res/layer/skin/png.js"></script><![endif]-->
+
+<body>
+<div id="maindiv" style="padding:10px 5px 0;">
+	<div class="ui_content">
+	<div class="ui_tb">
+		<table class="table" cellspacing="0" cellpadding="0" width="100%" align="center" border="0">
+			<caption>浙江省历年全要素生产率指数及其分解</caption>
+			<tbody><tr>
+				<th width="10%"><strong>年份</strong>
+				</th>
+				<th width="30%"><strong>EFFCH</strong>
+				</th>
+				<th width="30%"><strong>TECHCH</strong>
+				</th>
+				<th width="30%"><strong>TFP</strong>
+				</th>
+			</tr>
+				<tr>
+					<td class="hei12" height="24">2006-2007</td>
+					<td class="hei12" height="24">
+						1.00
+					</td>
+					<td class="hei12" height="24">
+						0.775
+					</td>
+					<td class="hei12" height="24">
+						0.775
+					</td>
+				</tr>
+				<tr>
+					<td class="hei12" height="24">2007-2008</td>
+					<td class="hei12" height="24">
+						1.00
+					</td>
+					<td class="hei12" height="24">
+						0.904
+					</td>
+					<td class="hei12" height="24">
+						0.904
+					</td>
+				</tr>
+				<tr>
+					<td class="hei12" height="24">2008-2009</td>
+					<td class="hei12" height="24">
+						1.00
+					</td>
+					<td class="hei12" height="24">
+						1.048
+					</td>
+					<td class="hei12" height="24">
+						1.048
+					</td>
+				</tr>
+				<tr>
+					<td class="hei12" height="24">2009-2010</td>
+					<td class="hei12" height="24">
+						1.00
+					</td>
+					<td class="hei12" height="24">
+						0.939
+					</td>
+					<td class="hei12" height="24">
+						0.939
+					</td>
+				</tr>
+				<tr>
+					<td class="hei12" height="24">2010-2011</td>
+					<td class="hei12" height="24">
+						1.00
+					</td>
+					<td class="hei12" height="24">
+						0.958
+					</td>
+					<td class="hei12" height="24">
+						0.958
+					</td>
+				</tr>
+				<tr>
+					<td class="hei12" height="24">2011-2012</td>
+					<td class="hei12" height="24">
+						1.00
+					</td>
+					<td class="hei12" height="24">
+						0.934
+					</td>
+					<td class="hei12" height="24">
+						0.934
+					</td>
+				</tr>
+				<tr>
+					<td class="hei12" height="24">2012-2013</td>
+					<td class="hei12" height="24">
+						1.00
+					</td>
+					<td class="hei12" height="24">
+						0.922
+					</td>
+					<td class="hei12" height="24">
+						0.922
+					</td>
+				</tr>
+				<tr>
+					<td class="hei12" height="24">2013-2014</td>
+					<td class="hei12" height="24">
+						1.00
+					</td>
+					<td class="hei12" height="24">
+						0.953
+					</td>
+					<td class="hei12" height="24">
+						0.953
+					</td>
+				</tr>
+				<tr>
+					<td class="hei12" height="24">几何平均</td>
+					<td class="hei12" height="24">
+						1.00
+					</td>
+					<td class="hei12" height="24">
+						0.934
+					</td>
+					<td class="hei12" height="24">
+						0.934
+					</td>
+				</tr>
+			
+			</tbody>
+		</table>
+	</div>
+	</div>
+	
+	<script type="text/javascript">
+		function showInfoDiv(){
+			$("#info_div_flag_show").toggle();
+			$("#info_div_flag_hide").toggle();
+			$("#info_div").toggle();
+		}
+	</script>
+				
+	<div class="span_div_font_hei12" style="padding:20px 0 0 5px;">
+		<span style="margin-top:10px;"><b>模型方法</b></span>
+		<span onclick="showInfoDiv()" title="展开" id="info_div_flag_show" style="cursor: pointer; display: none;">+</span>
+		<span onclick="showInfoDiv()" title="收起" id="info_div_flag_hide" style="cursor: pointer;">-</span>
+		<br>
+		<div id="info_div" >
+		<span style="margin-left:24px;">本文使用的基于数据包络分析（DEA）的Malmquist指数就是这样一种非参数方法，该方法不仅可以测算全要素生产率（Total Factor Productivity，TFP）的逐期动态变化，而且还可以把这种变化分解为技术进步（Technical Change）、纯技术效率(Pure Technical Efficiency Change)和规模效率（Scale Change）的变动，因此具有很强的政策性含义，并且得到了越来越多的实证研究应用。</span><br>
+		<span style="margin-left:24px;">Malmquist指数最早由Malmquist（1953）作为一种消费指数而提出，后来由Carve (1982)、Fare等（1994）应用到生产率研究中。Malmquist指数的实质是通过两个不同时刻距离函数的比值来刻画生产率的变化。其基本形式如下：</span><br>
+		<span style="margin-left:24px;"><img src="images/gongshi/gongshi_1.png" border="0"></span><br>
+		<span style="margin-left:24px;"><img src="images/gongshi/gongshi_2.png" border="0"></span><br>
+		<span style="margin-left:24px;">其中，EFFCH为技术效率指数（efficiency change），TECH为技术进步指数（technical change）。 若M<sub>0</sub> 值大于1，则表明从t 期到t+1期全要素生产率出现了正的变化。</span><br>
+		<span style="margin-left:24px;">EFFCH表示规模报酬不变且要素自由流动条件下的相对效率变化，它是通过实际产出能力与理论产出（或潜在产出）能力之间的“距离”来反映的。本例中，该指数刻画了浙江省海洋经济在t到t+1时刻（即不同年度），实际生产与最大的潜在生产之间的距离。其值为1，意味着浙江省海洋经济的生产是完全有效率的，位于潜在生产边界上；技术效率小于1，则意味着其生产是无效率的，位于潜在生产边界内部。</span><br>
+		<span style="margin-left:24px;">TECH是技术进步指数，它刻画了从t到t+1时刻技术边界的移动。本例中，它表示浙江省海洋经济发展中，整体技术水平的进步与变革情况；若TECH值大于1说明技术水平提高了，若小于1，则说明生产技术未能有效提高</span><br>
+		<span style="margin-left:24px;">本文利用DEAP2.1软件，基于投入导向型模型，计算Malmquist生产率指数及其分解的逐年变动情况。我们将Malmquist指数转换成全要素生产率（TFP）,假定基年2006年的TFP=1，则有：TFP<sub>2007</sub>=TFP<sub>2006</sub>×M<sub>2007</sub> ，即，2007年TFP等于2006年TFP乘以2007年的Malmquist生产率指数，并以此类推。</span><br>
+		</div>
+	</div>
+			
+</div>
+</body></html>

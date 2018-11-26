@@ -149,7 +149,7 @@
 				zTree.expandAll(true);
 			}
 			
-			addTab('首页','firstPic.html');
+			addTab('海洋经济发展水平监测模型','hyjjfzspjcmx.html');
 			
 		});
 		
@@ -167,35 +167,66 @@
 		}
 		
 		function loadMenu(resourceType, treeObj){
-            data = [{"accessPath":"","checked":false,"delFlag":0,"parentID":1,"resourceCode":"","resourceDesc":"","resourceGrade":2,"resourceID":3,"resourceName":"基础数据","resourceOrder":0,"resourceType":""},
-            {"accessPath":"","checked":false,"delFlag":0,"parentID":1,"resourceCode":"","resourceDesc":"","resourceGrade":2,"resourceID":2,"resourceName":"摇号配租","resourceOrder":0,"resourceType":""},
-            {"accessPath":"","checked":false,"delFlag":0,"parentID":1,"resourceCode":"","resourceDesc":"","resourceGrade":2,"resourceID":16,"resourceName":"签约入住","resourceOrder":0,"resourceType":""},
-            {"accessPath":"","checked":false,"delFlag":0,"parentID":1,"resourceCode":"","resourceDesc":"","resourceGrade":2,"resourceID":24,"resourceName":"公租收费","resourceOrder":0,"resourceType":""},
-            {"accessPath":"","checked":false,"delFlag":0,"parentID":1,"resourceCode":"","resourceDesc":"","resourceGrade":2,"resourceID":34,"resourceName":"日常业务","resourceOrder":0,"resourceType":""},
-            {"accessPath":"","checked":false,"delFlag":0,"parentID":24,"resourceCode":"","resourceDesc":"","resourceGrade":3,"resourceID":26,"resourceName":"日常合同扣租","resourceOrder":0,"resourceType":""},
-            {"accessPath":"","checked":false,"delFlag":0,"parentID":16,"resourceCode":"","resourceDesc":"","resourceGrade":3,"resourceID":17,"resourceName":"通知书审核","resourceOrder":0,"resourceType":""},
-            {"accessPath":"house_list.html","checked":false,"delFlag":0,"parentID":3,"resourceCode":"","resourceDesc":"","resourceGrade":3,"resourceID":7,"resourceName":"房源管理","resourceOrder":0,"resourceType":""},
-            {"accessPath":"loupanchart.html","checked":false,"delFlag":0,"parentID":3,"resourceCode":"","resourceDesc":"","resourceGrade":3,"resourceID":8,"resourceName":"承租方管理","resourceOrder":0,"resourceType":""},
-            {"accessPath":"","checked":false,"delFlag":0,"parentID":2,"resourceCode":"","resourceDesc":"","resourceGrade":3,"resourceID":5,"resourceName":"房源导出","resourceOrder":0,"resourceType":""},
-            {"accessPath":"","checked":false,"delFlag":0,"parentID":16,"resourceCode":"","resourceDesc":"","resourceGrade":3,"resourceID":18,"resourceName":"电子合同管理","resourceOrder":0,"resourceType":""},
-            {"accessPath":"","checked":false,"delFlag":0,"parentID":24,"resourceCode":"","resourceDesc":"","resourceGrade":3,"resourceID":59,"resourceName":"日常合同续费","resourceOrder":0,"resourceType":""},
-            {"accessPath":"","checked":false,"delFlag":0,"parentID":34,"resourceCode":"","resourceDesc":"","resourceGrade":3,"resourceID":35,"resourceName":"房屋资产盘查","resourceOrder":0,"resourceType":""},
-            {"accessPath":"","checked":false,"delFlag":0,"parentID":34,"resourceCode":"","resourceDesc":"","resourceGrade":3,"resourceID":36,"resourceName":"园区企业盘查","resourceOrder":0,"resourceType":""},
-            {"accessPath":"","checked":false,"delFlag":0,"parentID":24,"resourceCode":"","resourceDesc":"","resourceGrade":3,"resourceID":42,"resourceName":"维修费用审核","resourceOrder":0,"resourceType":""},
-            {"accessPath":"","checked":false,"delFlag":0,"parentID":16,"resourceCode":"","resourceDesc":"","resourceGrade":3,"resourceID":33,"resourceName":"租金核算","resourceOrder":0,"resourceType":""},
-            {"accessPath":"","checked":false,"delFlag":0,"parentID":2,"resourceCode":"","resourceDesc":"","resourceGrade":3,"resourceID":6,"resourceName":"租户导出","resourceOrder":0,"resourceType":""},
-            {"accessPath":"firstPic.html","checked":false,"delFlag":0,"parentID":3,"resourceCode":"","resourceDesc":"","resourceGrade":3,"resourceID":32,"resourceName":"家庭成员管理","resourceOrder":0,"resourceType":""},
-            {"accessPath":"","checked":false,"delFlag":0,"parentID":3,"resourceCode":"","resourceDesc":"","resourceGrade":3,"resourceID":39,"resourceName":"施工单位管理","resourceOrder":0,"resourceType":""},
-            {"accessPath":"","checked":false,"delFlag":0,"parentID":2,"resourceCode":"","resourceDesc":"","resourceGrade":3,"resourceID":9,"resourceName":"配租导入","resourceOrder":0,"resourceType":""},
-            {"accessPath":"","checked":false,"delFlag":0,"parentID":16,"resourceCode":"","resourceDesc":"","resourceGrade":3,"resourceID":52,"resourceName":"租金缴费","resourceOrder":0,"resourceType":""},
-            {"accessPath":"","checked":false,"delFlag":0,"parentID":24,"resourceCode":"","resourceDesc":"","resourceGrade":3,"resourceID":25,"resourceName":"租金费用调整","resourceOrder":0,"resourceType":""},
-            {"accessPath":"","checked":false,"delFlag":0,"parentID":34,"resourceCode":"","resourceDesc":"","resourceGrade":3,"resourceID":51,"resourceName":"园区企业查询","resourceOrder":0,"resourceType":""},
-            {"accessPath":"","checked":false,"delFlag":0,"parentID":24,"resourceCode":"","resourceDesc":"","resourceGrade":3,"resourceID":53,"resourceName":"维修费用报销","resourceOrder":0,"resourceType":""},
-            {"accessPath":"","checked":false,"delFlag":0,"parentID":16,"resourceCode":"","resourceDesc":"","resourceGrade":3,"resourceID":40,"resourceName":"入住验房","resourceOrder":0,"resourceType":""},
-            {"accessPath":"","checked":false,"delFlag":0,"parentID":16,"resourceCode":"","resourceDesc":"","resourceGrade":3,"resourceID":41,"resourceName":"入住确认","resourceOrder":0,"resourceType":""},
-            {"accessPath":"","checked":false,"delFlag":0,"parentID":24,"resourceCode":"","resourceDesc":"","resourceGrade":3,"resourceID":56,"resourceName":"租金调整审核","resourceOrder":0,"resourceType":""},
-            {"accessPath":"","checked":false,"delFlag":0,"parentID":16,"resourceCode":"","resourceDesc":"","resourceGrade":3,"resourceID":60,"resourceName":"合同续订","resourceOrder":0,"resourceType":""},
-            {"accessPath":"","checked":false,"delFlag":0,"parentID":16,"resourceCode":"","resourceDesc":"","resourceGrade":3,"resourceID":58,"resourceName":"合同查询","resourceOrder":0,"resourceType":""}];
+            data = [{"accessPath":"","checked":false,"delFlag":0,"parentID":1,"resourceCode":"","resourceDesc":"","resourceGrade":2,"resourceID":3,"resourceName":"基础数据展示","resourceOrder":0,"resourceType":""},
+            {"accessPath":"qysj.html","checked":false,"delFlag":0,"parentID":3,"resourceCode":"","resourceDesc":"","resourceGrade":3,"resourceID":7,"resourceName":"区域数据","resourceOrder":0,"resourceType":""},
+            {"accessPath":"loupanchart.html","checked":false,"delFlag":0,"parentID":3,"resourceCode":"","resourceDesc":"","resourceGrade":3,"resourceID":8,"resourceName":"月报数据","resourceOrder":0,"resourceType":""},
+            {"accessPath":"firstPic.html","checked":false,"delFlag":0,"parentID":3,"resourceCode":"","resourceDesc":"","resourceGrade":3,"resourceID":32,"resourceName":"企业直报数据","resourceOrder":0,"resourceType":""},
+            {"accessPath":"allEcharts.html","checked":false,"delFlag":0,"parentID":3,"resourceCode":"","resourceDesc":"","resourceGrade":3,"resourceID":39,"resourceName":"海洋统计指标展示","resourceOrder":0,"resourceType":""},
+            {"accessPath":"allEcharts.html","checked":false,"delFlag":0,"parentID":3,"resourceCode":"","resourceDesc":"","resourceGrade":3,"resourceID":100,"resourceName":"海洋统计指标展示","resourceOrder":0,"resourceType":""},
+			
+			{"accessPath":"","checked":false,"delFlag":0,"parentID":1,"resourceCode":"","resourceDesc":"","resourceGrade":2,"resourceID":2,"resourceName":"整体模型展示","resourceOrder":0,"resourceType":""},
+            {"accessPath":"hyjjqyssclpgmx.html","checked":false,"delFlag":0,"parentID":2,"resourceCode":"","resourceDesc":"","resourceGrade":3,"resourceID":5,"resourceName":"海洋经济全要素生产率评估模型","resourceOrder":0,"resourceType":""},
+            {"accessPath":"hyjjfzspjcmx.html","checked":false,"delFlag":0,"parentID":2,"resourceCode":"","resourceDesc":"","resourceGrade":3,"resourceID":6,"resourceName":"海洋经济发展水平监测模型 ","resourceOrder":0,"resourceType":""},
+            {"accessPath":"hyjjfzhjjcmx.html","checked":false,"delFlag":0,"parentID":2,"resourceCode":"","resourceDesc":"","resourceGrade":3,"resourceID":9,"resourceName":"海洋经济发展环境监测模型 ","resourceOrder":0,"resourceType":""},
+            {"accessPath":"hyjjyjmx.html","checked":false,"delFlag":0,"parentID":2,"resourceCode":"","resourceDesc":"","resourceGrade":3,"resourceID":110,"resourceName":"海洋经济预警模型 ","resourceOrder":0,"resourceType":""},
+            {"accessPath":"hyjjkcxfzpgmx.html","checked":false,"delFlag":0,"parentID":2,"resourceCode":"","resourceDesc":"","resourceGrade":3,"resourceID":111,"resourceName":"海洋经济可持续发展评估模型  ","resourceOrder":0,"resourceType":""},
+            {"accessPath":"hyjjfzzsmx.html","checked":false,"delFlag":0,"parentID":2,"resourceCode":"","resourceDesc":"","resourceGrade":3,"resourceID":112,"resourceName":"海洋经济发展指数模型  ","resourceOrder":0,"resourceType":""},
+            {"accessPath":"hltcfzpj.html","checked":false,"delFlag":0,"parentID":2,"resourceCode":"","resourceDesc":"","resourceGrade":3,"resourceID":113,"resourceName":"海陆统筹发展评价模型  ","resourceOrder":0,"resourceType":""},
+            {"accessPath":"hyjjzldycmx.html","checked":false,"delFlag":0,"parentID":2,"resourceCode":"","resourceDesc":"","resourceGrade":3,"resourceID":114,"resourceName":"海洋经济总量的预测模型  ","resourceOrder":0,"resourceType":""},
+            {"accessPath":"","checked":false,"delFlag":0,"parentID":1,"resourceCode":"","resourceDesc":"","resourceGrade":2,"resourceID":16,"resourceName":"产业模型展示","resourceOrder":0,"resourceType":""},
+            {"accessPath":"hycyfzpgmx.html","checked":false,"delFlag":0,"parentID":16,"resourceCode":"","resourceDesc":"","resourceGrade":3,"resourceID":17,"resourceName":"海洋产业发展评估模型 ","resourceOrder":0,"resourceType":""},
+            {"accessPath":"hycyjcyyjmx.html","checked":false,"delFlag":0,"parentID":16,"resourceCode":"","resourceDesc":"","resourceGrade":3,"resourceID":18,"resourceName":"海洋产业监测与预警模型 ","resourceOrder":0,"resourceType":""},
+            {"accessPath":"hycyjgyhdpgmx.html","checked":false,"delFlag":0,"parentID":16,"resourceCode":"","resourceDesc":"","resourceGrade":3,"resourceID":33,"resourceName":"海洋产业结构优化度评估模型 ","resourceOrder":0,"resourceType":""},
+            {"accessPath":"hyyykcxfzpgmxzs.html","checked":false,"delFlag":0,"parentID":16,"resourceCode":"","resourceDesc":"","resourceGrade":3,"resourceID":52,"resourceName":"海洋渔业可持续发展评估模型 ","resourceOrder":0,"resourceType":""},
+            {"accessPath":"hycyjjqjjspcdmx.html","checked":false,"delFlag":0,"parentID":16,"resourceCode":"","resourceDesc":"","resourceGrade":3,"resourceID":40,"resourceName":"海洋产业集聚区集聚水平测度模型 ","resourceOrder":0,"resourceType":""},
+            {"accessPath":"yhcyjjqzhfzpgmx.html","checked":false,"delFlag":0,"parentID":16,"resourceCode":"","resourceDesc":"","resourceGrade":3,"resourceID":41,"resourceName":"沿海产业集聚区综合发展评估模型 ","resourceOrder":0,"resourceType":""},
+            {"accessPath":"zshycyjjqzhfzpgmx.html","checked":false,"delFlag":0,"parentID":16,"resourceCode":"","resourceDesc":"","resourceGrade":3,"resourceID":60,"resourceName":"舟山海洋产业集聚区综合发展评估模型 ","resourceOrder":0,"resourceType":""},
+            {"accessPath":"zshycyjjqzyystrmx.html","checked":false,"delFlag":0,"parentID":16,"resourceCode":"","resourceDesc":"","resourceGrade":3,"resourceID":58,"resourceName":"舟山海洋产业集聚区的最优要素投入模型 ","resourceOrder":0,"resourceType":""},
+            {"accessPath":"hycyjjqydqjjdxtdzpgmx.html","checked":false,"delFlag":0,"parentID":16,"resourceCode":"","resourceDesc":"","resourceGrade":3,"resourceID":120,"resourceName":"海洋产业集聚区与地区经济的协调发展评估模型 ","resourceOrder":0,"resourceType":""},
+            
+			
+			{"accessPath":"","checked":false,"delFlag":0,"parentID":1,"resourceCode":"","resourceDesc":"","resourceGrade":2,"resourceID":24,"resourceName":"其他模型展示","resourceOrder":0,"resourceType":""},
+			{"accessPath":"","checked":false,"delFlag":0,"parentID":24,"resourceCode":"","resourceDesc":"","resourceGrade":3,"resourceID":59,"resourceName":"海洋科技创新能力评估模型 ","resourceOrder":0,"resourceType":""},
+            {"accessPath":"","checked":false,"delFlag":0,"parentID":24,"resourceCode":"","resourceDesc":"","resourceGrade":3,"resourceID":42,"resourceName":"海洋水产品价格监测模型 ","resourceOrder":0,"resourceType":""},
+            {"accessPath":"","checked":false,"delFlag":0,"parentID":24,"resourceCode":"","resourceDesc":"","resourceGrade":3,"resourceID":25,"resourceName":"海洋科研机构研发效率评估模型 ","resourceOrder":0,"resourceType":""},
+            {"accessPath":"","checked":false,"delFlag":0,"parentID":24,"resourceCode":"","resourceDesc":"","resourceGrade":3,"resourceID":26,"resourceName":"数据采集处理模型","resourceOrder":0,"resourceType":""},
+            {"accessPath":"","checked":false,"delFlag":0,"parentID":26,"resourceCode":"","resourceDesc":"","resourceGrade":4,"resourceID":203,"resourceName":"逻辑判断模型","resourceOrder":0,"resourceType":""},
+            {"accessPath":"","checked":false,"delFlag":0,"parentID":26,"resourceCode":"","resourceDesc":"","resourceGrade":4,"resourceID":203,"resourceName":"回归分析模型","resourceOrder":0,"resourceType":""},
+            {"accessPath":"","checked":false,"delFlag":0,"parentID":26,"resourceCode":"","resourceDesc":"","resourceGrade":4,"resourceID":203,"resourceName":"差值估计模型","resourceOrder":0,"resourceType":""},
+            {"accessPath":"","checked":false,"delFlag":0,"parentID":26,"resourceCode":"","resourceDesc":"","resourceGrade":4,"resourceID":203,"resourceName":"预测估计模型","resourceOrder":0,"resourceType":""},
+            {"accessPath":"","checked":false,"delFlag":0,"parentID":26,"resourceCode":"","resourceDesc":"","resourceGrade":4,"resourceID":203,"resourceName":"文本模型","resourceOrder":0,"resourceType":""},
+			{"accessPath":"","checked":false,"delFlag":0,"parentID":24,"resourceCode":"","resourceDesc":"","resourceGrade":3,"resourceID":53,"resourceName":"检测模型","resourceOrder":0,"resourceType":""},
+			{"accessPath":"","checked":false,"delFlag":0,"parentID":53,"resourceCode":"","resourceDesc":"","resourceGrade":4,"resourceID":202,"resourceName":"经济发展水平检测","resourceOrder":0,"resourceType":""},
+			{"accessPath":"","checked":false,"delFlag":0,"parentID":53,"resourceCode":"","resourceDesc":"","resourceGrade":4,"resourceID":202,"resourceName":"经济发展环境检测","resourceOrder":0,"resourceType":""},
+			{"accessPath":"","checked":false,"delFlag":0,"parentID":53,"resourceCode":"","resourceDesc":"","resourceGrade":4,"resourceID":202,"resourceName":"经济产业检测","resourceOrder":0,"resourceType":""},
+			{"accessPath":"","checked":false,"delFlag":0,"parentID":53,"resourceCode":"","resourceDesc":"","resourceGrade":4,"resourceID":202,"resourceName":"涉海产品价格检测","resourceOrder":0,"resourceType":""},
+			{"accessPath":"","checked":false,"delFlag":0,"parentID":53,"resourceCode":"","resourceDesc":"","resourceGrade":4,"resourceID":202,"resourceName":"涉海企业发展检测","resourceOrder":0,"resourceType":""},
+			{"accessPath":"","checked":false,"delFlag":0,"parentID":24,"resourceCode":"","resourceDesc":"","resourceGrade":3,"resourceID":56,"resourceName":"经济评估模型","resourceOrder":0,"resourceType":""},
+            {"accessPath":"","checked":false,"delFlag":0,"parentID":56,"resourceCode":"","resourceDesc":"","resourceGrade":4,"resourceID":201,"resourceName":"综合评估模型","resourceOrder":0,"resourceType":""},
+            {"accessPath":"","checked":false,"delFlag":0,"parentID":56,"resourceCode":"","resourceDesc":"","resourceGrade":4,"resourceID":201,"resourceName":"产业发展评估模型","resourceOrder":0,"resourceType":""},
+            {"accessPath":"","checked":false,"delFlag":0,"parentID":56,"resourceCode":"","resourceDesc":"","resourceGrade":4,"resourceID":201,"resourceName":"浙江省海洋科技支撑力评估模型","resourceOrder":0,"resourceType":""},
+            {"accessPath":"","checked":false,"delFlag":0,"parentID":56,"resourceCode":"","resourceDesc":"","resourceGrade":4,"resourceID":201,"resourceName":"浙江省沿海产业聚集区综合发展评估模型","resourceOrder":0,"resourceType":""},
+            {"accessPath":"","checked":false,"delFlag":0,"parentID":56,"resourceCode":"","resourceDesc":"","resourceGrade":4,"resourceID":201,"resourceName":"海洋经济示范区发展评估模型","resourceOrder":0,"resourceType":""},
+			
+
+			
+			{"accessPath":"","checked":false,"delFlag":0,"parentID":1,"resourceCode":"","resourceDesc":"","resourceGrade":2,"resourceID":34,"resourceName":"系统管理","resourceOrder":0,"resourceType":""},
+            {"accessPath":"","checked":false,"delFlag":0,"parentID":34,"resourceCode":"","resourceDesc":"","resourceGrade":3,"resourceID":35,"resourceName":"组织机构","resourceOrder":0,"resourceType":""},
+            {"accessPath":"","checked":false,"delFlag":0,"parentID":34,"resourceCode":"","resourceDesc":"","resourceGrade":3,"resourceID":36,"resourceName":"用户管理","resourceOrder":0,"resourceType":""},
+			{"accessPath":"","checked":false,"delFlag":0,"parentID":34,"resourceCode":"","resourceDesc":"","resourceGrade":3,"resourceID":51,"resourceName":"角色管理","resourceOrder":0,"resourceType":""},
+			{"accessPath":"","checked":false,"delFlag":0,"parentID":34,"resourceCode":"","resourceDesc":"","resourceGrade":3,"resourceID":51,"resourceName":"权限管理","resourceOrder":0,"resourceType":""},
+			{"accessPath":"","checked":false,"delFlag":0,"parentID":34,"resourceCode":"","resourceDesc":"","resourceGrade":3,"resourceID":51,"resourceName":"密码管理","resourceOrder":0,"resourceType":""},
+            ];
             // 如果返回数据不为空，加载"业务模块"目录
             if(data != null){
                 // 将返回的数据赋给zTree
@@ -204,7 +235,7 @@
                 zTree = $.fn.zTree.getZTreeObj(treeObj);
                 if( zTree ){
                     // 默认展开所有节点
-                    zTree.expandAll(true);
+                    zTree.expandAll(false);
                 }
             }
 		}

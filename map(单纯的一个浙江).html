@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>地图</title>
+		
+		<link rel="stylesheet" href="pic/css/bootstrap.min.css">
+		<script src="pic/js/echarts.min.js"></script>
+		<script type="text/javascript" src="scripts/jquery/jquery-1.7.1.js"></script>
+		<link href="style/authority/basic_layout.css" rel="stylesheet" type="text/css">
+		<link href="style/authority/common_style.css" rel="stylesheet" type="text/css">
+		<script type="text/javascript" src="scripts/authority/commonAll.js"></script>
+		<script type="text/javascript" src="scripts/fancybox/jquery.fancybox-1.3.4.js"></script>
+		<script type="text/javascript" src="scripts/fancybox/jquery.fancybox-1.3.4.pack.js"></script>
+		<link rel="stylesheet" type="text/css" href="style/authority/jquery.fancybox-1.3.4.css" media="screen"></link>
+		<script type="text/javascript" src="scripts/artDialog/artDialog.js?skin=default"></script>
+		<script src="http://api.tianditu.gov.cn/api?v=4.0&tk=3650aa72d803565cae050cf625e411fa" type="text/javascript"></script>
+		<style>
+			.row {
+				margin:20px 0 15px 0;
+			}
+		</style>
+	</head>
+	<body>
+		
+		<div class="row">
+			<div class="col-md-6" id="chart" style="height:800px"></div>
+		</div>
+		
+		<script type="text/javascript">
+			
+			
+			
+			var myChart = echarts.init(document.getElementById('chart'));
+			$.ajax({
+				type:'get',
+				url:'zhejiang.json',
+				dataType:'json',
+				success:function (geoJson) {
+					echarts.registerMap('zj', geoJson);
+					myChart.setOption(option = {
+						title: {
+							text: '浙江',
+							
+						},
+						tooltip: {
+							trigger: 'item',
+							formatter: '{b}<br/>{c} (p / km2)'
+						},
+						toolbox: {
+							show: true,
+							orient: 'vertical',
+							left: 'right',
+							top: 'center',
+							feature: {
+								dataView: {readOnly: false},
+								restore: {},
+								saveAsImage: {}
+							}
+						},
+						visualMap: {
+							min: 800,
+							max: 50000,
+							text:['High','Low'],
+							realtime: false,
+							calculable: true,
+							inRange: {
+								color: ['lightskyblue','yellow', 'orangered']
+							}
+						},
+						series: [
+							{
+								name: '浙江',
+								type: 'map',
+								mapType: 'zj', // 自定义扩展图表类型
+								itemStyle:{
+									normal:{label:{show:true}},
+									emphasis:{label:{show:true}}
+								},
+								data:[
+									{name: '湖州市', value: 20057.34},
+									{name: '嘉兴市', value: 15477.48},
+									{name: '舟山市', value: 31686.1},
+									{name: '杭州市', value: 6992.6},
+									{name: '绍兴市', value: 44045.49},
+									{name: '宁波市', value: 40689.64},
+									{name: '衢州市', value: 37659.78},
+									{name: '金华市', value: 45180.97},
+									{name: '台州市', value: 55204.26},
+									{name: '丽水市', value: 21900.9},
+									{name: '温州市', value: 4918.26}
+									
+								],
+								// 自定义名称映射
+								nameMap: {
+									'湖州市': '湖州市',
+									'嘉兴市': '嘉兴市',
+									'舟山市': '舟山市',
+									'杭州市': '杭州市',
+									'绍兴市': '绍兴市',
+									'宁波市': '宁波市',
+									'衢州市': '衢州市',
+									'金华市': '金华市',
+									'台州市': '台州市',
+									'丽水市': '丽水市',
+									'温州市': '温州市'
+									
+								}
+							}
+						]
+					});
+				}
+				});
+		</script>
+	</body>
+</html>

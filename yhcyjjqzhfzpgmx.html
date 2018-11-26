@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>沿海产业聚集区综合发展评估模型</title>
+
+    <link rel="stylesheet" href="pic/css/bootstrap.min.css">
+    <script src="pic/js/echarts.min.js"></script>
+    <script type="text/javascript" src="scripts/jquery/jquery-1.7.1.js"></script>
+    <link href="style/authority/basic_layout.css" rel="stylesheet" type="text/css">
+    <link href="style/authority/common_style.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <script type="text/javascript" src="scripts/authority/commonAll.js"></script>
+    <script type="text/javascript" src="scripts/fancybox/jquery.fancybox-1.3.4.js"></script>
+    <script type="text/javascript" src="scripts/fancybox/jquery.fancybox-1.3.4.pack.js"></script>
+    <link rel="stylesheet" type="text/css" href="style/authority/jquery.fancybox-1.3.4.css" media="screen"></link>
+    <script type="text/javascript" src="scripts/artDialog/artDialog.js?skin=default"></script>
+    <style>
+        .row {
+            margin:20px 0 15px 0;
+        }
+    </style>
+</head>
+<body>
+<div>
+    <!--大container-->
+
+
+    <div class="row">
+        <div class="col-md-12">
+            <div class="ui_content">
+                <div class="ui_tb">
+                    <table class="table" cellspacing="0" cellpadding="0" width="100%" align="center" border="0">
+                        <tr>
+                            <th width="10%"><strong>序号</strong></th>
+                            <th width="45%"><strong>年份</strong></th>
+                            <th width="45%"><strong>得分</strong></th>
+                        </tr>
+
+
+                        <tr
+                                class="row_bai">
+                            <td height="24" class="hei12">1</td>
+                            <td height="24" class="hei12">2012</td>
+                            <td height="24" class="hei12">100</td>
+                        </tr>
+
+                        <tr class="row_bg"
+                        >
+                            <td height="24" class="hei12">2</td>
+                            <td height="24" class="hei12">2013</td>
+                            <td height="24" class="hei12">132</td>
+                        </tr>
+
+                        <tr
+                                class="row_bai">
+                            <td height="24" class="hei12">3</td>
+                            <td height="24" class="hei12">2014</td>
+                            <td height="24" class="hei12">158</td>
+                        </tr>
+
+
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+        <script type="text/javascript">
+            function showZhiBDiv(){
+                $("#zhiB_div_flag_show").toggle();
+                $("#zhiB_div_flag_hide").toggle();
+                $("#zhiB_div").toggle();
+            }
+        </script>
+        <div  class="hei12">
+            <p><b>浙江省沿海产业集聚区综合发展评估模型指标体系</b>
+                <span onclick="showZhiBDiv()" title="展开" id="zhiB_div_flag_show" style="cursor:pointer;">+</span>
+                <span onclick="showZhiBDiv()" title="收起" id="zhiB_div_flag_hide" style="display:none;cursor:pointer;">-</span>
+            </p>
+            <div id="zhiB_div" style="display:none;">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="ui_content">
+                            <div class="ui_tb">
+                                <table class="table" width="100%" border="0" cellpadding="0" cellspacing="1" bgcolor="#a2c2d9">
+                                    <tr>
+                                        <th width="20%"><strong>一级指标</strong></th>
+                                        <th width="40%"><strong>二级指标</strong></th>
+                                        <th width="20%"><strong>单位</strong></th>
+                                        <th width="20%"><strong>方向</strong></th>
+                                    </tr>
+                                    <tr class="row_bai">
+                                        <td height="24" class="hei12" rowspan="5">发展水平</td>
+                                        <td height="24" class="hei12">产业增加值</td>
+                                        <td height="24" class="hei12">亿元</td>
+                                        <td height="24" class="hei12">正向</td>
+                                    </tr>
+                                    <tr class="row_bg">
+                                        <td height="24" class="hei12">工业战略性新兴产值</td>
+                                        <td height="24" class="hei12">亿元</td>
+                                        <td height="24" class="hei12">正向</td>
+                                    </tr>
+                                    <tr class="row_bai">
+                                        <td height="24" class="hei12">集聚区开发程度</td>
+                                        <td height="24" class="hei12">%</td>
+                                        <td height="24" class="hei12">正向</td>
+                                    </tr>
+                                    <tr class="row_bg">
+                                        <td height="24" class="hei12">从业人员期末数</td>
+                                        <td height="24" class="hei12">万人</td>
+                                        <td height="24" class="hei12">正向</td>
+                                    </tr>
+                                    <tr class="row_bai">
+                                        <td height="24" class="hei12">利税总额</td>
+                                        <td height="24" class="hei12">亿元</td>
+                                        <td height="24" class="hei12">正向</td>
+                                    </tr>
+                                    <tr class="row_bai">
+                                        <td height="24" class="hei12" rowspan="3">贸易投资</td>
+                                        <td height="24" class="hei12 row_bg">实际引进内资</td>
+                                        <td height="24" class="hei12 row_bg">亿元</td>
+                                        <td height="24" class="hei12 row_bg">正向</td>
+                                    </tr>
+                                    <tr class="row_bai">
+                                        <td height="24" class="hei12">实际到位外资</td>
+                                        <td height="24" class="hei12">亿美元</td>
+                                        <td height="24" class="hei12">正向</td>
+                                    </tr>
+                                    <tr class="row_bai">
+                                        <td height="24" class="hei12 row_bg">固定资产投资额</td>
+                                        <td height="24" class="hei12 row_bg">亿元</td>
+                                        <td height="24" class="hei12 row_bg">正向</td>
+                                    </tr>
+                                    <tr class="row_bai">
+                                        <td height="24" class="hei12" rowspan="3">科技创新</td>
+                                        <td height="24" class="hei12">科技经费支出</td>
+                                        <td height="24" class="hei12">亿元</td>
+                                        <td height="24" class="hei12">正向</td>
+                                    </tr>
+                                    <tr class="row_bai">
+                                        <td height="24" class="hei12 row_bg">科技活动人数</td>
+                                        <td height="24" class="hei12 row_bg">人</td>
+                                        <td height="24" class="hei12 row_bg">正向</td>
+                                    </tr>
+                                    <tr class="row_bai">
+                                        <td height="24" class="hei12">发明专利</td>
+                                        <td height="24" class="hei12">项</td>
+                                        <td height="24" class="hei12">正向</td>
+                                    </tr>
+                                    <tr class="row_bai">
+                                        <td height="24" class="hei12" rowspan="2">综合能耗</td>
+                                        <td height="24" class="hei12 row_bg">单位增加值能耗率</td>
+                                        <td height="24" class="hei12 row_bg">万吨标煤/亿元</td>
+                                        <td height="24" class="hei12 row_bg">逆向</td>
+                                    </tr>
+                                    <tr class="row_bai">
+                                        <td height="24" class="hei12">单位增加值用水量</td>
+                                        <td height="24" class="hei12">万吨/亿元</td>
+                                        <td height="24" class="hei12">逆向</td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="hei12" style="padding:5px 0;">
+                    <p>注：集聚区开发程度=已开发建设面积/重点规划面积</p>
+                    <p>单位增加值能耗率=企业综合能耗/产业增加值</p>
+                    <p>单位增加值用水量=企业用水总量/产业增加值</p>
+                </div>
+            </div>
+
+
+    </div>
+
+    </div>
+
+</body>
+</html>

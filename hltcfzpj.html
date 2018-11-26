@@ -1,0 +1,1020 @@
+<html><head>
+<title>浙江省海洋经济模型展示系统-海洋经济可持续发展评估模型</title>
+<link rel="stylesheet" href="pic/css/bootstrap.min.css">
+<script src="pic/js/echarts.min.js"></script>
+<script type="text/javascript" src="scripts/jquery/jquery-1.7.1.js"></script>
+<link href="style/authority/basic_layout.css" rel="stylesheet" type="text/css">
+<link href="style/authority/common_style.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
+<script type="text/javascript" src="scripts/authority/commonAll.js"></script>
+<script type="text/javascript" src="scripts/fancybox/jquery.fancybox-1.3.4.js"></script>
+<script type="text/javascript" src="scripts/fancybox/jquery.fancybox-1.3.4.pack.js"></script>
+<link rel="stylesheet" type="text/css" href="style/authority/jquery.fancybox-1.3.4.css" media="screen"></link>
+<script type="text/javascript" src="scripts/artDialog/artDialog.js?skin=default"></script>
+</head><!--[if IE 6]><script type="text/javascript" src="http://115.238.45.165:8003/modelPlatform/res/layer/skin/png.js"></script><![endif]-->
+        
+<body>
+        <div id="maindiv" style="padding:10px 5px 0;">
+                <div id="contentdiv" style="padding:0 0 6px 0;">
+                    <form id="zform" action="zjHltcfzpg/index.do" method="post">
+                            <!--用于翻页  -->
+                            <input type="hidden" name="pageNum" id="pageNum" value="1">
+                                <div class="search_div">
+                                    <span class="hei12" style="padding-top:3px;float:left;margin-right:10px;">年份</span>
+                                    <select id="year" name="year" class="select" style="width:55px;height:22px;">
+                                        <option value="" selected="selected">全部</option>
+                                        
+                                            <option value="2015">2015</option>
+                                        
+                                            <option value="2014">2014</option>
+                                        
+                                            <option value="2013">2013</option>
+                                        
+                                            <option value="2012">2012</option>
+                                        
+                                            <option value="2011">2011</option>
+                                        
+                                            <option value="2010">2010</option>
+                                        
+                                            <option value="2009">2009</option>
+                                        
+                                            <option value="2008">2008</option>
+                                        
+                                            <option value="2007">2007</option>
+                                        
+                                            <option value="2006">2006</option>
+                                        
+                                    </select>
+                                    <img class="divalign" style="cursor: pointer" id="searchbtn" src="images/a_search.gif" width="43" height="22">
+                                </div>
+                            </form>
+                        
+                                <table class="table" cellspacing="0" cellpadding="0" width="100%" align="center" border="0">
+                                <caption class="title hei12">1.浙江省陆域经济对海洋系统资源利用效率评价表</caption>
+                                <tbody><tr>
+                                    <th width="10%"><strong>序号</strong></th>
+                                    <th width="10%"><strong>年份</strong></th>
+                                    <th width="20%"><strong>crste</strong></th>
+                                    <th width="20%"><strong>vrste</strong></th>
+                                    <th width="20%"><strong>scale</strong></th>
+                                    <th width="20%"><strong>Input-oriented RTS</strong></th>
+                                </tr>
+                                
+                                    <tr>
+                                        <td class="hei12" height="24">1</td>
+                                        <td class="hei12" height="24">2006年</td>
+                                        <td class="hei12" height="24">1.000</td>
+                                        <td class="hei12" height="24">1.000</td>
+                                        <td class="hei12" height="24">1.000</td>
+                                        <td class="hei12" height="24">Constant</td>
+                                    </tr>
+                                
+                                    <tr>
+                                        <td class="hei12" height="24">2</td>
+                                        <td class="hei12" height="24">2007年</td>
+                                        <td class="hei12" height="24">1.000</td>
+                                        <td class="hei12" height="24">1.000</td>
+                                        <td class="hei12" height="24">1.000</td>
+                                        <td class="hei12" height="24">Constant</td>
+                                    </tr>
+                                
+                                    <tr>
+                                        <td class="hei12" height="24">3</td>
+                                        <td class="hei12" height="24">2008年</td>
+                                        <td class="hei12" height="24">1.000</td>
+                                        <td class="hei12" height="24">1.000</td>
+                                        <td class="hei12" height="24">1.000</td>
+                                        <td class="hei12" height="24">Constant</td>
+                                    </tr>
+                                
+                                    <tr>
+                                        <td class="hei12" height="24">4</td>
+                                        <td class="hei12" height="24">2009年</td>
+                                        <td class="hei12" height="24">1.000</td>
+                                        <td class="hei12" height="24">1.000</td>
+                                        <td class="hei12" height="24">1.000</td>
+                                        <td class="hei12" height="24">Constant</td>
+                                    </tr>
+                                
+                                    <tr>
+                                        <td class="hei12" height="24">5</td>
+                                        <td class="hei12" height="24">2010年</td>
+                                        <td class="hei12" height="24">1.000</td>
+                                        <td class="hei12" height="24">1.000</td>
+                                        <td class="hei12" height="24">1.000</td>
+                                        <td class="hei12" height="24">Constant</td>
+                                    </tr>
+                                
+                                    <tr>
+                                        <td class="hei12" height="24">6</td>
+                                        <td class="hei12" height="24">2011年</td>
+                                        <td class="hei12" height="24">1.000</td>
+                                        <td class="hei12" height="24">1.000</td>
+                                        <td class="hei12" height="24">1.000</td>
+                                        <td class="hei12" height="24">Constant</td>
+                                    </tr>
+                                
+                                    <tr>
+                                        <td class="hei12" height="24">7</td>
+                                        <td class="hei12" height="24">2012年</td>
+                                        <td class="hei12" height="24">0.989</td>
+                                        <td class="hei12" height="24">1.000</td>
+                                        <td class="hei12" height="24">0.989</td>
+                                        <td class="hei12" height="24">Decreasing</td>
+                                    </tr>
+                                
+                                    <tr>
+                                        <td class="hei12" height="24">8</td>
+                                        <td class="hei12" height="24">2013年</td>
+                                        <td class="hei12" height="24">0.999</td>
+                                        <td class="hei12" height="24">1.000</td>
+                                        <td class="hei12" height="24">1.000</td>
+                                        <td class="hei12" height="24">Constant</td>
+                                    </tr>
+                                
+                                    <tr>
+                                        <td class="hei12" height="24">9</td>
+                                        <td class="hei12" height="24">2014年</td>
+                                        <td class="hei12" height="24">1.000</td>
+                                        <td class="hei12" height="24">1.000</td>
+                                        <td class="hei12" height="24">1.000</td>
+                                        <td class="hei12" height="24">Constant</td>
+                                    </tr>
+                                
+                                <tr>
+                                    <td class="hei12" colspan="2" height="24">Mean</td>
+                                    <td class="hei12" height="24">0.999</td>
+                                    <td class="hei12" height="24">1.000</td>
+                                    <td class="hei12" height="24">0.999</td>
+                                    <td class="hei12" height="24">---</td>
+                                </tr>
+                            </tbody></table>
+                        <!-- 翻页控件 -->
+                        
+        
+        
+        
+        
+        
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>翻页控件</title>
+        <script type="text/javascript">
+            //跳转到指定页
+            function gotopage() {
+                var pageNumer = $("#pageNumer").val();
+                $("#pageNum").val(pageNumer);
+                $("#zform").submit();
+            }
+            //返回第一页
+            function gotofirst() {
+                $("#pageNum").val("1");
+                $("#zform").submit();
+            }
+            //上一页
+            function previous(previouspage){
+                $("#pageNum").val(previouspage);
+                $("#zform").submit();
+            }
+            //下一页
+            function next(nextpage){
+                $("#pageNum").val(nextpage);
+                $("#zform").submit();
+            }
+            //返回最后一页
+            function gotolast(lastpage){
+                $("#pageNum").val(lastpage);
+                $("#zform").submit();
+            }
+        </script>
+        
+        
+            <div class="hei12" style="display: inline-block;width: 100%;">
+                <div style="float:left;padding:5px;">共有 9 条&nbsp;每页 10 条</div>
+                <div style="float:right;padding:5px 0 5px 5px;">
+                    
+                        <img src="images/pref/page/first_hui.gif" title="首页" width="10" height="9" border="0" align="bottom">&nbsp;&nbsp;
+                    
+                    
+                    
+                        <img src="images/pref/page/previous_hui.gif" title="上一页" width="10" height="9" border="0" align="bottom">&nbsp;&nbsp;
+                    
+                    
+                    
+                        <img src="images/pref/page/next_hui.gif" title="下一页" width="10" height="9" border="0" align="bottom">&nbsp;&nbsp;
+                    
+                    
+                    
+                        <img src="images/pref/page/last_hui.gif" title="末页" width="10" height="9" border="0" align="bottom">&nbsp;&nbsp;
+                    
+                    
+                    当前 1/1 页 转到第<input name="pageNumer" type="text" id="pageNumer" value="1" style="width:20px; font-family:'宋体'; font-size:12px;">页
+                    <input type="button" value="转" style="width:30px; font-family:'宋体'; font-size:12px;" onclick=""> 
+                </div>
+            </div>
+        
+        
+                        
+                                <table class="table" cellspacing="0" cellpadding="0" width="100%" align="center" border="0">
+                                <caption class="title hei12">2.陆域经济对海洋系统资源资源利用效率DEA无效决策单元松弛变量分布</caption>
+                                <tbody><tr>
+                                    <th rowspan="2" width="10%"><strong>序号</strong></th>
+                                    <th rowspan="2" width="10%"><strong>年份</strong></th>
+                                    <th colspan="6" width="60%"><strong>input slacks</strong></th>
+                                    <th colspan="2" width="20%"><strong>output slacks</strong></th>
+                                </tr>
+                                <tr>
+                                    <th width="10%"><strong>input1</strong></th>
+                                    <th width="10%"><strong>input2</strong></th>
+                                    <th width="10%"><strong>input3</strong></th>
+                                    <th width="10%"><strong>input4</strong></th>
+                                    <th width="10%"><strong>input5</strong></th>
+                                    <th width="10%"><strong>input6</strong></th>
+                                    <th width="10%"><strong>output1</strong></th>
+                                    <th width="10%"><strong>output2</strong></th>
+                                    
+                                </tr>
+                                
+                                    <tr>
+                                        <td class="hei12" height="24">1</td>
+                                        <td class="hei12" height="24">2006年</td>
+                                        <td class="hei12" height="24">0.0</td>
+                                        <td class="hei12" height="24">0.0</td>
+                                        <td class="hei12" height="24">0.0</td>
+                                        <td class="hei12" height="24">0.0</td>
+                                        <td class="hei12" height="24">0.0</td>
+                                        <td class="hei12" height="24">0.0</td>
+                                        <td class="hei12" height="24">0.0</td>
+                                        <td class="hei12" height="24">0.0</td>
+                                    </tr>
+                                
+                                    <tr>
+                                        <td class="hei12" height="24">2</td>
+                                        <td class="hei12" height="24">2007年</td>
+                                        <td class="hei12" height="24">0.0</td>
+                                        <td class="hei12" height="24">0.0</td>
+                                        <td class="hei12" height="24">0.0</td>
+                                        <td class="hei12" height="24">0.0</td>
+                                        <td class="hei12" height="24">0.0</td>
+                                        <td class="hei12" height="24">0.0</td>
+                                        <td class="hei12" height="24">0.0</td>
+                                        <td class="hei12" height="24">0.0</td>
+                                    </tr>
+                                
+                                    <tr>
+                                        <td class="hei12" height="24">3</td>
+                                        <td class="hei12" height="24">2008年</td>
+                                        <td class="hei12" height="24">0.0</td>
+                                        <td class="hei12" height="24">0.0</td>
+                                        <td class="hei12" height="24">0.0</td>
+                                        <td class="hei12" height="24">0.0</td>
+                                        <td class="hei12" height="24">0.0</td>
+                                        <td class="hei12" height="24">0.0</td>
+                                        <td class="hei12" height="24">0.0</td>
+                                        <td class="hei12" height="24">0.0</td>
+                                    </tr>
+                                
+                                    <tr>
+                                        <td class="hei12" height="24">4</td>
+                                        <td class="hei12" height="24">2009年</td>
+                                        <td class="hei12" height="24">0.0</td>
+                                        <td class="hei12" height="24">0.0</td>
+                                        <td class="hei12" height="24">0.0</td>
+                                        <td class="hei12" height="24">0.0</td>
+                                        <td class="hei12" height="24">0.0</td>
+                                        <td class="hei12" height="24">0.0</td>
+                                        <td class="hei12" height="24">0.0</td>
+                                        <td class="hei12" height="24">0.0</td>
+                                    </tr>
+                                
+                                    <tr>
+                                        <td class="hei12" height="24">5</td>
+                                        <td class="hei12" height="24">2010年</td>
+                                        <td class="hei12" height="24">0.0</td>
+                                        <td class="hei12" height="24">0.0</td>
+                                        <td class="hei12" height="24">0.0</td>
+                                        <td class="hei12" height="24">0.0</td>
+                                        <td class="hei12" height="24">0.0</td>
+                                        <td class="hei12" height="24">0.0</td>
+                                        <td class="hei12" height="24">0.0</td>
+                                        <td class="hei12" height="24">0.0</td>
+                                    </tr>
+                                
+                                    <tr>
+                                        <td class="hei12" height="24">6</td>
+                                        <td class="hei12" height="24">2011年</td>
+                                        <td class="hei12" height="24">0.0</td>
+                                        <td class="hei12" height="24">0.0</td>
+                                        <td class="hei12" height="24">0.0</td>
+                                        <td class="hei12" height="24">0.0</td>
+                                        <td class="hei12" height="24">0.0</td>
+                                        <td class="hei12" height="24">0.0</td>
+                                        <td class="hei12" height="24">0.0</td>
+                                        <td class="hei12" height="24">0.0</td>
+                                    </tr>
+                                
+                                    <tr>
+                                        <td class="hei12" height="24">7</td>
+                                        <td class="hei12" height="24">2012年</td>
+                                        <td class="hei12" height="24">0.0</td>
+                                        <td class="hei12" height="24">0.0</td>
+                                        <td class="hei12" height="24">0.0</td>
+                                        <td class="hei12" height="24">0.0</td>
+                                        <td class="hei12" height="24">0.0</td>
+                                        <td class="hei12" height="24">0.0</td>
+                                        <td class="hei12" height="24">0.0</td>
+                                        <td class="hei12" height="24">0.0</td>
+                                    </tr>
+                                
+                                    <tr>
+                                        <td class="hei12" height="24">8</td>
+                                        <td class="hei12" height="24">2013年</td>
+                                        <td class="hei12" height="24">140854.4</td>
+                                        <td class="hei12" height="24">2.4</td>
+                                        <td class="hei12" height="24">0.0</td>
+                                        <td class="hei12" height="24">15248.7</td>
+                                        <td class="hei12" height="24">3176.7</td>
+                                        <td class="hei12" height="24">6387.0</td>
+                                        <td class="hei12" height="24">0.4</td>
+                                        <td class="hei12" height="24">0.0</td>
+                                    </tr>
+                                
+                                    <tr>
+                                        <td class="hei12" height="24">9</td>
+                                        <td class="hei12" height="24">2014年</td>
+                                        <td class="hei12" height="24">0.0</td>
+                                        <td class="hei12" height="24">0.0</td>
+                                        <td class="hei12" height="24">0.0</td>
+                                        <td class="hei12" height="24">0.0</td>
+                                        <td class="hei12" height="24">0.0</td>
+                                        <td class="hei12" height="24">0.0</td>
+                                        <td class="hei12" height="24">0.0</td>
+                                        <td class="hei12" height="24">0.0</td>
+                                    </tr>
+                                
+                            </tbody></table>
+                        <!-- 翻页控件 -->
+                        
+        
+        
+        
+        
+        
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>翻页控件</title>
+        <script type="text/javascript">
+            //跳转到指定页
+            function gotopage() {
+                var pageNumer = $("#pageNumer").val();
+                $("#pageNum").val(pageNumer);
+                $("#zform").submit();
+            }
+            //返回第一页
+            function gotofirst() {
+                $("#pageNum").val("1");
+                $("#zform").submit();
+            }
+            //上一页
+            function previous(previouspage){
+                $("#pageNum").val(previouspage);
+                $("#zform").submit();
+            }
+            //下一页
+            function next(nextpage){
+                $("#pageNum").val(nextpage);
+                $("#zform").submit();
+            }
+            //返回最后一页
+            function gotolast(lastpage){
+                $("#pageNum").val(lastpage);
+                $("#zform").submit();
+            }
+        </script>
+        
+        
+            <div class="hei12" style="display: inline-block;width: 100%;">
+                <div style="float:left;padding:5px;">共有 9 条&nbsp;每页 10 条</div>
+                <div style="float:right;padding:5px 0 5px 5px;">
+                    
+                        <img src="images/pref/page/first_hui.gif" title="首页" width="10" height="9" border="0" align="bottom">&nbsp;&nbsp;
+                    
+                    
+                    
+                        <img src="images/pref/page/previous_hui.gif" title="上一页" width="10" height="9" border="0" align="bottom">&nbsp;&nbsp;
+                    
+                    
+                    
+                        <img src="images/pref/page/next_hui.gif" title="下一页" width="10" height="9" border="0" align="bottom">&nbsp;&nbsp;
+                    
+                    
+                    
+                        <img src="images/pref/page/last_hui.gif" title="末页" width="10" height="9" border="0" align="bottom">&nbsp;&nbsp;
+                    
+                    
+                    当前 1/1 页 转到第<input name="pageNumer" type="text" id="pageNumer" value="1" style="width:20px; font-family:'宋体'; font-size:12px;">页
+                    <input type="button" value="转" style="width:30px; font-family:'宋体'; font-size:12px;" onclick=""> 
+                </div>
+            </div>
+        
+        
+                        
+                                <table class="table" cellspacing="0" cellpadding="0" width="100%" align="center" border="0">
+                                <caption class="title hei12">3.浙江省海洋经济对陆域系统资源利用效率评价表</caption>
+                                <tbody><tr>
+                                    <th width="10%"><strong>序号</strong></th>
+                                    <th width="10%"><strong>年份</strong></th>
+                                    <th width="20%"><strong>crste</strong></th>
+                                    <th width="20%"><strong>vrste</strong></th>
+                                    <th width="20%"><strong>scale</strong></th>
+                                    <th width="20%"><strong>Input-oriented RTS</strong></th>
+                                </tr>
+                                
+                                    <tr>
+                                        <td class="hei12" height="24">1</td>
+                                        <td class="hei12" height="24">2006年</td>
+                                        <td class="hei12" height="24">1.000</td>
+                                        <td class="hei12" height="24">1.000</td>
+                                        <td class="hei12" height="24">1.000</td>
+                                        <td class="hei12" height="24">Constant</td>
+                                    </tr>
+                                
+                                    <tr>
+                                        <td class="hei12" height="24">2</td>
+                                        <td class="hei12" height="24">2007年</td>
+                                        <td class="hei12" height="24">0.938</td>
+                                        <td class="hei12" height="24">1.000</td>
+                                        <td class="hei12" height="24">0.938</td>
+                                        <td class="hei12" height="24">Increasing</td>
+                                    </tr>
+                                
+                                    <tr>
+                                        <td class="hei12" height="24">3</td>
+                                        <td class="hei12" height="24">2008年</td>
+                                        <td class="hei12" height="24">0.941</td>
+                                        <td class="hei12" height="24">1.000</td>
+                                        <td class="hei12" height="24">0.941</td>
+                                        <td class="hei12" height="24">Increasing</td>
+                                    </tr>
+                                
+                                    <tr>
+                                        <td class="hei12" height="24">4</td>
+                                        <td class="hei12" height="24">2009年</td>
+                                        <td class="hei12" height="24">1.000</td>
+                                        <td class="hei12" height="24">1.000</td>
+                                        <td class="hei12" height="24">1.000</td>
+                                        <td class="hei12" height="24">Constant</td>
+                                    </tr>
+                                
+                                    <tr>
+                                        <td class="hei12" height="24">5</td>
+                                        <td class="hei12" height="24">2010年</td>
+                                        <td class="hei12" height="24">1.000</td>
+                                        <td class="hei12" height="24">1.000</td>
+                                        <td class="hei12" height="24">1.000</td>
+                                        <td class="hei12" height="24">Constant</td>
+                                    </tr>
+                                
+                                    <tr>
+                                        <td class="hei12" height="24">6</td>
+                                        <td class="hei12" height="24">2011年</td>
+                                        <td class="hei12" height="24">1.000</td>
+                                        <td class="hei12" height="24">1.000</td>
+                                        <td class="hei12" height="24">1.000</td>
+                                        <td class="hei12" height="24">Constant</td>
+                                    </tr>
+                                
+                                    <tr>
+                                        <td class="hei12" height="24">7</td>
+                                        <td class="hei12" height="24">2012年</td>
+                                        <td class="hei12" height="24">1.000</td>
+                                        <td class="hei12" height="24">1.000</td>
+                                        <td class="hei12" height="24">1.000</td>
+                                        <td class="hei12" height="24">Constant</td>
+                                    </tr>
+                                
+                                    <tr>
+                                        <td class="hei12" height="24">8</td>
+                                        <td class="hei12" height="24">2013年</td>
+                                        <td class="hei12" height="24">1.000</td>
+                                        <td class="hei12" height="24">1.000</td>
+                                        <td class="hei12" height="24">1.000</td>
+                                        <td class="hei12" height="24">Constant</td>
+                                    </tr>
+                                
+                                    <tr>
+                                        <td class="hei12" height="24">9</td>
+                                        <td class="hei12" height="24">2014年</td>
+                                        <td class="hei12" height="24">1.000</td>
+                                        <td class="hei12" height="24">1.000</td>
+                                        <td class="hei12" height="24">1.000</td>
+                                        <td class="hei12" height="24">Constant</td>
+                                    </tr>
+                                
+                                <tr>
+                                    <td class="hei12" colspan="2" height="24">Mean</td>
+                                    <td class="hei12" height="24">0.987</td>
+                                    <td class="hei12" height="24">1.000</td>
+                                    <td class="hei12" height="24">0.987</td>
+                                    <td class="hei12" height="24">---</td>
+                                </tr>
+                            </tbody></table>
+                        <!-- 翻页控件 -->
+                        
+        
+        
+        
+        
+        
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>翻页控件</title>
+        <script type="text/javascript">
+            //跳转到指定页
+            function gotopage() {
+                var pageNumer = $("#pageNumer").val();
+                $("#pageNum").val(pageNumer);
+                $("#zform").submit();
+            }
+            //返回第一页
+            function gotofirst() {
+                $("#pageNum").val("1");
+                $("#zform").submit();
+            }
+            //上一页
+            function previous(previouspage){
+                $("#pageNum").val(previouspage);
+                $("#zform").submit();
+            }
+            //下一页
+            function next(nextpage){
+                $("#pageNum").val(nextpage);
+                $("#zform").submit();
+            }
+            //返回最后一页
+            function gotolast(lastpage){
+                $("#pageNum").val(lastpage);
+                $("#zform").submit();
+            }
+        </script>
+        
+        
+            <div class="hei12" style="display: inline-block;width: 100%;">
+                <div style="float:left;padding:5px;">共有 9 条&nbsp;每页 10 条</div>
+                <div style="float:right;padding:5px 0 5px 5px;">
+                    
+                        <img src="images/pref/page/first_hui.gif" title="首页" width="10" height="9" border="0" align="bottom">&nbsp;&nbsp;
+                    
+                    
+                    
+                        <img src="images/pref/page/previous_hui.gif" title="上一页" width="10" height="9" border="0" align="bottom">&nbsp;&nbsp;
+                    
+                    
+                    
+                        <img src="images/pref/page/next_hui.gif" title="下一页" width="10" height="9" border="0" align="bottom">&nbsp;&nbsp;
+                    
+                    
+                    
+                        <img src="images/pref/page/last_hui.gif" title="末页" width="10" height="9" border="0" align="bottom">&nbsp;&nbsp;
+                    
+                    
+                    当前 1/1 页 转到第<input name="pageNumer" type="text" id="pageNumer" value="1" style="width:20px; font-family:'宋体'; font-size:12px;">页
+                    <input type="button" value="转" style="width:30px; font-family:'宋体'; font-size:12px;" onclick=""> 
+                </div>
+            </div>
+        
+        
+                        
+                                <table class="table" cellspacing="0" cellpadding="0" width="100%" align="center" border="0">
+                                <caption class="title hei12">4.海洋经济对陆域系统资源利用效率DEA无效决策单元松弛变量分布</caption>
+                                <tbody><tr>
+                                    <th rowspan="2" width="10%"><strong>序号</strong></th>
+                                    <th rowspan="2" width="10%"><strong>年份</strong></th>
+                                    <th colspan="6" width="60%"><strong>input slacks</strong></th>
+                                    <th colspan="2" width="20%"><strong>output slacks</strong></th>
+                                </tr>
+                                <tr>
+                                    <th width="10%"><strong>input1</strong></th>
+                                    <th width="10%"><strong>input2</strong></th>
+                                    <th width="10%"><strong>input3</strong></th>
+                                    <th width="10%"><strong>input4</strong></th>
+                                    <th width="10%"><strong>input5</strong></th>
+                                    <th width="10%"><strong>input6</strong></th>
+                                    <th width="10%"><strong>output1</strong></th>
+                                    <th width="10%"><strong>output2</strong></th>
+                                    
+                                </tr>
+                                
+                                    <tr>
+                                        <td class="hei12" height="24">1</td>
+                                        <td class="hei12" height="24">2006年</td>
+                                        <td class="hei12" height="24">0.0</td>
+                                        <td class="hei12" height="24">0.0</td>
+                                        <td class="hei12" height="24">0.0</td>
+                                        <td class="hei12" height="24">0.0</td>
+                                        <td class="hei12" height="24">0.0</td>
+                                        <td class="hei12" height="24">0.0</td>
+                                        <td class="hei12" height="24">0.0</td>
+                                        <td class="hei12" height="24">0.0</td>
+                                    </tr>
+                                
+                                    <tr>
+                                        <td class="hei12" height="24">2</td>
+                                        <td class="hei12" height="24">2007年</td>
+                                        <td class="hei12" height="24">0.0</td>
+                                        <td class="hei12" height="24">0.0</td>
+                                        <td class="hei12" height="24">0.0</td>
+                                        <td class="hei12" height="24">0.0</td>
+                                        <td class="hei12" height="24">0.0</td>
+                                        <td class="hei12" height="24">0.0</td>
+                                        <td class="hei12" height="24">0.0</td>
+                                        <td class="hei12" height="24">0.0</td>
+                                    </tr>
+                                
+                                    <tr>
+                                        <td class="hei12" height="24">3</td>
+                                        <td class="hei12" height="24">2008年</td>
+                                        <td class="hei12" height="24">0.0</td>
+                                        <td class="hei12" height="24">0.0</td>
+                                        <td class="hei12" height="24">0.0</td>
+                                        <td class="hei12" height="24">0.0</td>
+                                        <td class="hei12" height="24">0.0</td>
+                                        <td class="hei12" height="24">0.0</td>
+                                        <td class="hei12" height="24">0.0</td>
+                                        <td class="hei12" height="24">0.0</td>
+                                    </tr>
+                                
+                                    <tr>
+                                        <td class="hei12" height="24">4</td>
+                                        <td class="hei12" height="24">2009年</td>
+                                        <td class="hei12" height="24">0.0</td>
+                                        <td class="hei12" height="24">0.0</td>
+                                        <td class="hei12" height="24">0.0</td>
+                                        <td class="hei12" height="24">0.0</td>
+                                        <td class="hei12" height="24">0.0</td>
+                                        <td class="hei12" height="24">0.0</td>
+                                        <td class="hei12" height="24">0.0</td>
+                                        <td class="hei12" height="24">0.0</td>
+                                    </tr>
+                                
+                                    <tr>
+                                        <td class="hei12" height="24">5</td>
+                                        <td class="hei12" height="24">2010年</td>
+                                        <td class="hei12" height="24">0.0</td>
+                                        <td class="hei12" height="24">0.0</td>
+                                        <td class="hei12" height="24">0.0</td>
+                                        <td class="hei12" height="24">0.0</td>
+                                        <td class="hei12" height="24">0.0</td>
+                                        <td class="hei12" height="24">0.0</td>
+                                        <td class="hei12" height="24">0.0</td>
+                                        <td class="hei12" height="24">0.0</td>
+                                    </tr>
+                                
+                                    <tr>
+                                        <td class="hei12" height="24">6</td>
+                                        <td class="hei12" height="24">2011年</td>
+                                        <td class="hei12" height="24">0.0</td>
+                                        <td class="hei12" height="24">0.0</td>
+                                        <td class="hei12" height="24">0.0</td>
+                                        <td class="hei12" height="24">0.0</td>
+                                        <td class="hei12" height="24">0.0</td>
+                                        <td class="hei12" height="24">0.0</td>
+                                        <td class="hei12" height="24">0.0</td>
+                                        <td class="hei12" height="24">0.0</td>
+                                    </tr>
+                                
+                                    <tr>
+                                        <td class="hei12" height="24">7</td>
+                                        <td class="hei12" height="24">2012年</td>
+                                        <td class="hei12" height="24">0.0</td>
+                                        <td class="hei12" height="24">0.0</td>
+                                        <td class="hei12" height="24">0.0</td>
+                                        <td class="hei12" height="24">0.0</td>
+                                        <td class="hei12" height="24">0.0</td>
+                                        <td class="hei12" height="24">0.0</td>
+                                        <td class="hei12" height="24">0.0</td>
+                                        <td class="hei12" height="24">0.0</td>
+                                    </tr>
+                                
+                                    <tr>
+                                        <td class="hei12" height="24">8</td>
+                                        <td class="hei12" height="24">2013年</td>
+                                        <td class="hei12" height="24">0.0</td>
+                                        <td class="hei12" height="24">0.0</td>
+                                        <td class="hei12" height="24">0.0</td>
+                                        <td class="hei12" height="24">0.0</td>
+                                        <td class="hei12" height="24">0.0</td>
+                                        <td class="hei12" height="24">0.0</td>
+                                        <td class="hei12" height="24">0.0</td>
+                                        <td class="hei12" height="24">0.0</td>
+                                    </tr>
+                                
+                                    <tr>
+                                        <td class="hei12" height="24">9</td>
+                                        <td class="hei12" height="24">2014年</td>
+                                        <td class="hei12" height="24">0.0</td>
+                                        <td class="hei12" height="24">0.0</td>
+                                        <td class="hei12" height="24">0.0</td>
+                                        <td class="hei12" height="24">0.0</td>
+                                        <td class="hei12" height="24">0.0</td>
+                                        <td class="hei12" height="24">0.0</td>
+                                        <td class="hei12" height="24">0.0</td>
+                                        <td class="hei12" height="24">0.0</td>
+                                    </tr>
+                                
+                            </tbody></table>
+                        <!-- 翻页控件 -->
+                        
+        
+        
+        
+        
+        
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>翻页控件</title>
+        <script type="text/javascript">
+            //跳转到指定页
+            function gotopage() {
+                var pageNumer = $("#pageNumer").val();
+                $("#pageNum").val(pageNumer);
+                $("#zform").submit();
+            }
+            //返回第一页
+            function gotofirst() {
+                $("#pageNum").val("1");
+                $("#zform").submit();
+            }
+            //上一页
+            function previous(previouspage){
+                $("#pageNum").val(previouspage);
+                $("#zform").submit();
+            }
+            //下一页
+            function next(nextpage){
+                $("#pageNum").val(nextpage);
+                $("#zform").submit();
+            }
+            //返回最后一页
+            function gotolast(lastpage){
+                $("#pageNum").val(lastpage);
+                $("#zform").submit();
+            }
+        </script>
+        
+        
+            <div class="hei12" style="display: inline-block;width: 100%;">
+                <div style="float:left;padding:5px;">共有 9 条&nbsp;每页 10 条</div>
+                <div style="float:right;padding:5px 0 5px 5px;">
+                    
+                        <img src="images/pref/page/first_hui.gif" title="首页" width="10" height="9" border="0" align="bottom">&nbsp;&nbsp;
+                    
+                    
+                    
+                        <img src="images/pref/page/previous_hui.gif" title="上一页" width="10" height="9" border="0" align="bottom">&nbsp;&nbsp;
+                    
+                    
+                    
+                        <img src="images/pref/page/next_hui.gif" title="下一页" width="10" height="9" border="0" align="bottom">&nbsp;&nbsp;
+                    
+                    
+                    
+                        <img src="images/pref/page/last_hui.gif" title="末页" width="10" height="9" border="0" align="bottom">&nbsp;&nbsp;
+                    
+                    
+                    当前 1/1 页 转到第<input name="pageNumer" type="text" id="pageNumer" value="1" style="width:20px; font-family:'宋体'; font-size:12px;">页
+                    <input type="button" value="转" style="width:30px; font-family:'宋体'; font-size:12px;" onclick=""> 
+                </div>
+            </div>
+        
+        
+                        
+                                <table class="table" cellspacing="0" cellpadding="0" width="100%" align="center" border="0">
+                                <caption class="title hei12">5.浙江省海陆经济协调持续度评价结果</caption>
+                                <tbody><tr>
+                                    <th width="10%"><strong>序号</strong></th>
+                                    <th width="10%"><strong>年份</strong></th>
+                                    <th width="80%"><strong>协调度</strong></th>
+                                </tr>
+                                
+                                    <tr>
+                                        <td class="hei12" height="24">1</td>
+                                        <td class="hei12" height="24">2006年</td>
+                                        <td class="hei12" height="24">1.000</td>
+                                    </tr>
+                                
+                                    <tr>
+                                        <td class="hei12" height="24">2</td>
+                                        <td class="hei12" height="24">2007年</td>
+                                        <td class="hei12" height="24">0.938</td>
+                                    </tr>
+                                
+                                    <tr>
+                                        <td class="hei12" height="24">3</td>
+                                        <td class="hei12" height="24">2008年</td>
+                                        <td class="hei12" height="24">0.941</td>
+                                    </tr>
+                                
+                                    <tr>
+                                        <td class="hei12" height="24">4</td>
+                                        <td class="hei12" height="24">2009年</td>
+                                        <td class="hei12" height="24">1.000</td>
+                                    </tr>
+                                
+                                    <tr>
+                                        <td class="hei12" height="24">5</td>
+                                        <td class="hei12" height="24">2010年</td>
+                                        <td class="hei12" height="24">1.000</td>
+                                    </tr>
+                                
+                                    <tr>
+                                        <td class="hei12" height="24">6</td>
+                                        <td class="hei12" height="24">2011年</td>
+                                        <td class="hei12" height="24">1.000</td>
+                                    </tr>
+                                
+                                    <tr>
+                                        <td class="hei12" height="24">7</td>
+                                        <td class="hei12" height="24">2012年</td>
+                                        <td class="hei12" height="24">0.989</td>
+                                    </tr>
+                                
+                                    <tr>
+                                        <td class="hei12" height="24">8</td>
+                                        <td class="hei12" height="24">2013年</td>
+                                        <td class="hei12" height="24">0.999</td>
+                                    </tr>
+                                
+                                    <tr>
+                                        <td class="hei12" height="24">9</td>
+                                        <td class="hei12" height="24">2014年</td>
+                                        <td class="hei12" height="24">1.000</td>
+                                    </tr>
+                                
+                            </tbody></table>
+                        <!-- 翻页控件 -->
+                        
+        
+        
+        
+        
+        
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>翻页控件</title>
+        <script type="text/javascript">
+            //跳转到指定页
+            function gotopage() {
+                var pageNumer = $("#pageNumer").val();
+                $("#pageNum").val(pageNumer);
+                $("#zform").submit();
+            }
+            //返回第一页
+            function gotofirst() {
+                $("#pageNum").val("1");
+                $("#zform").submit();
+            }
+            //上一页
+            function previous(previouspage){
+                $("#pageNum").val(previouspage);
+                $("#zform").submit();
+            }
+            //下一页
+            function next(nextpage){
+                $("#pageNum").val(nextpage);
+                $("#zform").submit();
+            }
+            //返回最后一页
+            function gotolast(lastpage){
+                $("#pageNum").val(lastpage);
+                $("#zform").submit();
+            }
+        </script>
+        
+        
+            <div class="hei12" style="display: inline-block;width: 100%;">
+                <div style="float:left;padding:5px;">共有 9 条&nbsp;每页 10 条</div>
+                <div style="float:right;padding:5px 0 5px 5px;">
+                    
+                        <img src="images/pref/page/first_hui.gif" title="首页" width="10" height="9" border="0" align="bottom">&nbsp;&nbsp;
+                    
+                    
+                    
+                        <img src="images/pref/page/previous_hui.gif" title="上一页" width="10" height="9" border="0" align="bottom">&nbsp;&nbsp;
+                    
+                    
+                    
+                        <img src="images/pref/page/next_hui.gif" title="下一页" width="10" height="9" border="0" align="bottom">&nbsp;&nbsp;
+                    
+                    
+                    
+                        <img src="images/pref/page/last_hui.gif" title="末页" width="10" height="9" border="0" align="bottom">&nbsp;&nbsp;
+                    
+                    
+                    当前 1/1 页 转到第<input name="pageNumer" type="text" id="pageNumer" value="1" style="width:20px; font-family:'宋体'; font-size:12px;">页
+                    <input type="button" value="转" style="width:30px; font-family:'宋体'; font-size:12px;" onclick=""> 
+                </div>
+            </div>
+        
+        
+                    </div>
+                    
+                    <script type="text/javascript">
+                            function showInfoDiv(){
+                                $("#info_div_flag_show").toggle();
+                                $("#info_div_flag_hide").toggle();
+                                $("#info_div").toggle();
+                            }
+                            function showZhiBDiv(){
+                                $("#zhiB_div_flag_show").toggle();
+                                $("#zhiB_div_flag_hide").toggle();
+                                $("#zhiB_div").toggle();
+                            }
+                        </script>
+                        
+                    <div class="hei12">
+                        <p><b>浙江省海陆统筹发展指标体系</b>
+                        <span onclick="showZhiBDiv()" title="展开" id="zhiB_div_flag_show" style="cursor:pointer;">+</span>
+                        <span onclick="showZhiBDiv()" title="收起" id="zhiB_div_flag_hide" style="display:none;cursor:pointer;">-</span>
+                        </p>
+                        <div id="zhiB_div" style="display:none;">
+                        <table class="table" cellspacing="0" cellpadding="0" width="100%" align="center" border="0">
+                            <tbody><tr>
+                                <th width="35%"><strong>指标体系</strong></th>
+                                <th width="45%"><strong>指标名称</strong></th>
+                                <th width="20%"><strong>指标说明</strong></th>
+                            </tr>
+                            <tr >
+                                <td class="hei12" rowspan="8" height="24">海洋系统与陆域经济的效益指标</td>
+                                <td class="hei12" height="24">海洋捕捞产量</td>
+                                <td class="hei12" rowspan="6" height="24">投入指标</td>
+                            </tr>
+                            <tr>
+                                <td class="hei12" height="24">海洋盐业产量</td>
+                            </tr>
+                            <tr>
+                                <td class="hei12" height="24">货物周转量</td>
+                            </tr>
+                            <tr>
+                                <td class="hei12" height="24">海水养殖产量</td>
+                            </tr>
+                            <tr>
+                                <td class="hei12" height="24">旅游国际外汇收入</td>
+                            </tr>
+                            <tr>
+                                <td class="hei12" height="24">工业废水排放量</td>
+                            </tr>
+                            <tr>
+                                <td class="hei12" height="24">海洋生产总值占地区GDP的比重</td>
+                                <td class="hei12" rowspan="2" height="24">产出指标</td>
+                            </tr>
+                            <tr>
+                                <td class="hei12" height="24">人均GDP</td>
+                            </tr>
+                            
+                            <tr>
+                                <td class="hei12" rowspan="8" height="24">陆域经济与海洋经济的效益指标</td>
+                                <td class="hei12" height="24">地区GDP</td>
+                                <td class="hei12" rowspan="6" height="24">投入指标</td>
+                            </tr>
+                            <tr>
+                                <td class="hei12" height="24">研发经费支出</td>
+                            </tr>
+                            <tr>
+                                <td class="hei12" height="24">消费性支出占总收入的比重</td>
+                            </tr>
+                            <tr>
+                                <td class="hei12" height="24">运输线路长度</td>
+                            </tr>
+                            <tr>
+                                <td class="hei12" height="24">涉海就业人数</td>
+                            </tr>
+                            <tr>
+                                <td class="hei12" height="24">工业总产值</td>
+                            </tr>
+                            <tr>
+                                <td class="hei12" height="24">海洋经济生产总值</td>
+                                <td class="hei12" rowspan="2" height="24">产出指标</td>
+                            </tr>
+                            <tr>
+                                <td class="hei12" height="24">海洋生产总值占地区GDP的比重</td>
+                            </tr>
+                            
+                        </tbody></table>
+                        </div>
+                    </div>
+                    
+                    <div class="span_div_font_hei12" style="padding:20px 0 0 5px;">
+                        <span style="margin-top:10px;"><b>模型方法</b></span>
+                        <span onclick="showInfoDiv()" title="展开" id="info_div_flag_show" style="cursor:pointer;">+</span>
+                        <span onclick="showInfoDiv()" title="收起" id="info_div_flag_hide" style="display:none;cursor:pointer;">-</span>
+                        <br>
+                        <div id="info_div" style="display:none;">
+                            <span>1、数据包络分析</span><br>
+                            <span style="margin-left:24px;">数据包络分析（DEA）是一种非参数的效率评价方法，通过建立数学规划模型，考虑多个投入、多个产出，从而对决策单元（DMUs）间的相对有效性进行评价。DEA方法的指标权重从公平角度出发由数学规划直接产生，效率值不受不同计量单位的影响，从而可以避免量纲不一致所产生的诸多问题。DEA遵循“最优化”原则，不受宏观调控与制度变迁的影响，分析样本的“相对有效性”，运用线性规划判断决策单元是否位于生产前沿面上，克服了生产函数的风险及平均性的缺陷，得出的结果也更加准确。</span><br>
+                            <span>2、海陆经济协调度</span><br>
+                            <span style="margin-left:24px;"> 海陆经济协调性持续度表示的是区域内海洋经济与陆域经济之间的协调异质性。海陆经济协调持续发展是海洋经济与陆域经济之间物质能量交换的协调，是对海陆互补性的整合与提升，是对区域整体效益的评价。海陆经济要实现协调持续发展，则应该建立在海洋系统为陆域经济发展提供较高的效率，同时陆域系统又为海洋经济的发展提供较高的效率基础之上。海陆经济协调持续发展的状态协调度为：</span><br>
+                            <span style="margin-left:24px;"> γ=min(θ<sub>1</sub>,θ<sub>2</sub>)/max(θ<sub>1</sub>,θ<sub>2</sub>) &nbsp;&nbsp;&nbsp;&nbsp; 公式（19-3）</span><br>
+                            <span style="margin-left:24px;">协调度越高，则表明二者之间的发展具有较高的一致性和同步性；协调度越低，则表明二者之间的发展不具备一致性和同步性，不是一方超出另一方的支撑及利用能力，就是一方滞后于另一方的发展。 </span><br>
+                        </div>
+                    </div>		
+                        
+                </div>
+
+</body>
+</html>

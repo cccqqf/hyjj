@@ -83,14 +83,14 @@ html,body {
 	left: 0;
 	top: 93px;
 	bottom: 0px;
-	width: 280px;
+	width: 305px;
 	overflow: hidden;
 /* 	border-right: 5px solid #DDDDDD; */
 }
 
 #main {
 	position: absolute;
-	left: 280px;
+	left: 305px;
 	top: 93px;
 	bottom: 0px;
 	right: 0px;
@@ -121,7 +121,7 @@ html,body {
 }
 
 #left_menu_cnt {
-	width: 280px;
+	width: 305px;
 	position: absolute;
 	top: 0px;
 	bottom: 0px;

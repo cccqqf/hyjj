@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>浙江省海洋产业集聚区的集聚水平测度模型</title>
+
+    <link rel="stylesheet" href="pic/css/bootstrap.min.css">
+    <script src="pic/js/echarts.min.js"></script>
+    <script type="text/javascript" src="scripts/jquery/jquery-1.7.1.js"></script>
+    <link href="style/authority/basic_layout.css" rel="stylesheet" type="text/css">
+    <link href="style/authority/common_style.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <script type="text/javascript" src="scripts/authority/commonAll.js"></script>
+    <script type="text/javascript" src="scripts/fancybox/jquery.fancybox-1.3.4.js"></script>
+    <script type="text/javascript" src="scripts/fancybox/jquery.fancybox-1.3.4.pack.js"></script>
+    <link rel="stylesheet" type="text/css" href="style/authority/jquery.fancybox-1.3.4.css" media="screen"></link>
+    <script type="text/javascript" src="scripts/artDialog/artDialog.js?skin=default"></script>
+    <style>
+        .row {
+            margin:20px 0 15px 0;
+        }
+    </style>
+</head>
+<body>
+<div>
+    <!--大container-->
+
+
+    <div class="row">
+        <div class="col-md-12">
+            <div class="ui_content">
+                <div class="ui_tb">
+                    <table class="table" cellspacing="0" cellpadding="0" width="100%" align="center" border="0">
+                        <caption class="title">舟山海洋产业集聚区的区位熵系数</caption>
+                        <tr>
+                            <th width="13%"><strong>年度</strong></th>
+                            <th width="29%"><strong>工业产值区位熵</strong></th>
+                            <th width="29%"><strong>劳动投入区位熵</strong></th>
+                            <th width="29%"><strong>投资额区位熵</strong></th>
+                        </tr>
+
+                        <tr
+                                class="row_bai">
+                            <td height="24" class="hei12">2013</td>
+                            <td height="24" class="hei12">0.35</td>
+                            <td height="24" class="hei12">2.76</td>
+                            <td height="24" class="hei12">3.5</td>
+                        </tr>
+
+                        <tr class="row_bg"
+                        >
+                            <td height="24" class="hei12">2012</td>
+                            <td height="24" class="hei12">0.36</td>
+                            <td height="24" class="hei12">2.67</td>
+                            <td height="24" class="hei12">3.39</td>
+                        </tr>
+
+                        <tr
+                                class="row_bai">
+                            <td height="24" class="hei12">2011</td>
+                            <td height="24" class="hei12">0.3</td>
+                            <td height="24" class="hei12">2.78</td>
+                            <td height="24" class="hei12">4.0</td>
+                        </tr>
+
+
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+
+
+
+        <div class="col-md-12" id="main5" style="height:400px"></div>
+
+    </div>
+
+    <script type="text/javascript">
+        // 基于准备好的dom，初始化echarts实例
+
+
+
+        var myChart5=echarts.init(document.getElementById('main5'));
+        var labelOption = {
+            normal: {
+                show: true,
+                position: 'insideBottom',
+                distance: 15,
+                align: 'left',
+                verticalAlign: 'middle',
+                rotate: 90,
+                formatter: '{c} ',
+                fontSize: 16,
+                rich: {
+                    name: {
+                        textBorderColor: '#fff'
+                    }
+                }
+            }
+        };
+
+        var option5 = {
+            title: {
+                text: '经济发展指标各分项指数的预测结果',
+                left:'center'
+            },
+            color: ['#003366', '#006699', '#4cabce', '#e5323e'],
+            tooltip: {
+                trigger: 'axis',
+                axisPointer: {
+                    type: 'shadow'
+                }
+            },
+            legend: {
+                data: ['2011', '2012', '2013', '2014'],
+                bottom:0
+            },
+            toolbox: {
+                show: true,
+                orient: 'vertical',
+                left: 'right',
+                top: 'center',
+                feature: {
+                    mark: {show: true},
+
+                    magicType: {show: true, type: ['line', 'bar', 'stack', 'tiled']},
+                    restore: {show: true},
+                    saveAsImage: {show: true}
+                }
+            },
+            calculable: true,
+            xAxis: [
+                {
+                    type: 'category',
+                    axisTick: {show: false},
+                    data: ['工业产值', '劳动投入', '投资额']
+                }
+            ],
+            yAxis: [
+                {
+                    type: 'value'
+                }
+            ],
+            series: [
+                {
+                    name: '2011',
+                    type: 'bar',
+                    barGap: 0,
+                    label: labelOption,
+                    data: [0.3,2.78,4]
+                },
+                {
+                    name: '2012',
+                    type: 'bar',
+                    label: labelOption,
+                    data: [0.36,2.67,3.39]
+
+                },
+                {
+                    name: '2013',
+                    type: 'bar',
+                    label: labelOption,
+                    data: [0.35,2.76,3.5]
+
+                }
+            ]
+        };
+        myChart5.setOption(option5);
+    </script>
+
+</body>
+</html>

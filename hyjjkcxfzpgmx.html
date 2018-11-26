@@ -1,0 +1,413 @@
+<html><head>
+<title>浙江省海洋经济模型展示系统-海洋经济可持续发展评估模型</title>
+<link rel="stylesheet" href="pic/css/bootstrap.min.css">
+<script src="pic/js/echarts.min.js"></script>
+<script type="text/javascript" src="scripts/jquery/jquery-1.7.1.js"></script>
+<link href="style/authority/basic_layout.css" rel="stylesheet" type="text/css">
+<link href="style/authority/common_style.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
+<script type="text/javascript" src="scripts/authority/commonAll.js"></script>
+<script type="text/javascript" src="scripts/fancybox/jquery.fancybox-1.3.4.js"></script>
+<script type="text/javascript" src="scripts/fancybox/jquery.fancybox-1.3.4.pack.js"></script>
+<link rel="stylesheet" type="text/css" href="style/authority/jquery.fancybox-1.3.4.css" media="screen"></link>
+<script type="text/javascript" src="scripts/artDialog/artDialog.js?skin=default"></script>
+</head><!--[if IE 6]><script type="text/javascript" src="http://115.238.45.165:8003/modelPlatform/res/layer/skin/png.js"></script><![endif]-->
+
+<body>
+        <div id="maindiv" style="padding:10px 5px 0;">
+                <div id="contentdiv" style="padding:0 0 6px 0;">
+                    <form id="zform" action="areaEconomyDev/index.do" method="post">
+                            <!--用于翻页  -->
+                            <input type="hidden" name="pageNum" id="pageNum" value="1">
+                                <div class="search_div">
+                                    <span class="hei12" style="padding-top:3px;float:left;margin-right:10px;">年份区间</span>
+                                    <select id="yearStart" name="yearStart" class="select" style="width:60px;height:22px;">
+                                        
+                                            <option value="2006" selected="selected">2006</option>
+                                        
+                                            <option value="2007">2007</option>
+                                        
+                                            <option value="2008">2008</option>
+                                        
+                                            <option value="2009">2009</option>
+                                        
+                                            <option value="2010">2010</option>
+                                        
+                                            <option value="2011">2011</option>
+                                        
+                                            <option value="2012">2012</option>
+                                        
+                                            <option value="2013">2013</option>
+                                        
+                                            <option value="2014">2014</option>
+                                        
+                                            <option value="2015">2015</option>
+                                        
+                                    </select>
+                                    <select id="yearEnd" name="yearEnd" class="select" style="width:60px;height:22px;">
+                                        
+                                            <option value="2015" selected="selected">2015</option>
+                                        
+                                            <option value="2014">2014</option>
+                                        
+                                            <option value="2013">2013</option>
+                                        
+                                            <option value="2012">2012</option>
+                                        
+                                            <option value="2011">2011</option>
+                                        
+                                            <option value="2010">2010</option>
+                                        
+                                            <option value="2009">2009</option>
+                                        
+                                            <option value="2008">2008</option>
+                                        
+                                            <option value="2007">2007</option>
+                                        
+                                            <option value="2006">2006</option>
+                                        
+                                    </select>
+                                    <img class="divalign" style="cursor: pointer" id="searchbtn" src="images/a_search.gif" width="43" height="22">
+                                </div>
+                            </form>
+                        
+                            <table class="table" cellspacing="0" cellpadding="0" width="100%" align="center" border="0">
+                                <tbody><tr>
+                                    <th width="9%"><strong>序号</strong></th>
+                                    <th width="13%"><strong>年份</strong></th>
+                                    <th width="13%"><strong>经济发展</strong></th>
+                                    <th width="13%"><strong>社会发展</strong></th>
+                                    <th width="13%"><strong>科技创新</strong></th>
+                                    <th width="13%"><strong>资源供给</strong></th>
+                                    <th width="13%"><strong>环境保护</strong></th>
+                                    <th width="13%"><strong>综合得分</strong></th>
+                                </tr>
+                                
+                                    <tr class="row_bai">
+                                        <td class="hei12" height="24">1</td>
+                                        <td class="hei12" height="24">2011年</td>
+                                        <td class="hei12" height="24">-1.4736</td>
+                                        <td class="hei12" height="24">-1.0188</td>
+                                        <td class="hei12" height="24">-0.8162</td>
+                                        <td class="hei12" height="24">-1.1417</td>
+                                        <td class="hei12" height="24">-0.6339</td>
+                                        <td class="hei12" height="24">-5.0841</td>
+                                    </tr>
+                                
+                                    <tr class="row_bg">
+                                        <td class="hei12" height="24">2</td>
+                                        <td class="hei12" height="24">2012年</td>
+                                        <td class="hei12" height="24">-0.2977</td>
+                                        <td class="hei12" height="24">-0.5117</td>
+                                        <td class="hei12" height="24">-0.2917</td>
+                                        <td class="hei12" height="24">-0.3387</td>
+                                        <td class="hei12" height="24">-0.0970</td>
+                                        <td class="hei12" height="24">-1.5368</td>
+                                    </tr>
+                                
+                                    <tr class="row_bai">
+                                        <td class="hei12" height="24">3</td>
+                                        <td class="hei12" height="24">2013年</td>
+                                        <td class="hei12" height="24">0.4045</td>
+                                        <td class="hei12" height="24">0.3509</td>
+                                        <td class="hei12" height="24">0.1457</td>
+                                        <td class="hei12" height="24">0.3263</td>
+                                        <td class="hei12" height="24">-0.1735</td>
+                                        <td class="hei12" height="24">1.0539</td>
+                                    </tr>
+                                
+                                    <tr class="row_bg">
+                                        <td class="hei12" height="24">4</td>
+                                        <td class="hei12" height="24">2014年</td>
+                                        <td class="hei12" height="24">1.3668</td>
+                                        <td class="hei12" height="24">1.1797</td>
+                                        <td class="hei12" height="24">0.9623</td>
+                                        <td class="hei12" height="24">1.1540</td>
+                                        <td class="hei12" height="24">0.9043</td>
+                                        <td class="hei12" height="24">5.5671</td>
+                                    </tr>
+                                
+                            </tbody></table>
+                        <!-- 翻页控件 -->
+                        
+        
+        
+        
+        
+        
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>翻页控件</title>
+        <script type="text/javascript">
+            //跳转到指定页
+            function gotopage() {
+                var pageNumer = $("#pageNumer").val();
+                $("#pageNum").val(pageNumer);
+                $("#zform").submit();
+            }
+            //返回第一页
+            function gotofirst() {
+                $("#pageNum").val("1");
+                $("#zform").submit();
+            }
+            //上一页
+            function previous(previouspage){
+                $("#pageNum").val(previouspage);
+                $("#zform").submit();
+            }
+            //下一页
+            function next(nextpage){
+                $("#pageNum").val(nextpage);
+                $("#zform").submit();
+            }
+            //返回最后一页
+            function gotolast(lastpage){
+                $("#pageNum").val(lastpage);
+                $("#zform").submit();
+            }
+        </script>
+        
+        
+            <div class="hei12" style="display: inline-block;width: 100%;">
+                <div style="float:left;padding:5px;">共有 4 条&nbsp;每页 10 条</div>
+                <div style="float:right;padding:5px 0 5px 5px;">
+                    
+                        <img src="images/pref/page/first_hui.gif" title="首页" width="10" height="9" border="0" align="bottom">&nbsp;&nbsp;
+                    
+                    
+                    
+                        <img src="images/pref/page/previous_hui.gif" title="上一页" width="10" height="9" border="0" align="bottom">&nbsp;&nbsp;
+                    
+                    
+                    
+                        <img src="images/pref/page/next_hui.gif" title="下一页" width="10" height="9" border="0" align="bottom">&nbsp;&nbsp;
+                    
+                    
+                    
+                        <img src="images/pref/page/last_hui.gif" title="末页" width="10" height="9" border="0" align="bottom">&nbsp;&nbsp;
+                    
+                    
+                    当前 1/1 页 转到第<input name="pageNumer" type="text" id="pageNumer" value="1" style="width:20px; font-family:'宋体'; font-size:12px;">页
+                    <input type="button" value="转" style="width:30px; font-family:'宋体'; font-size:12px;" onclick=""> 
+                </div>
+            </div>
+        
+        
+                    </div>
+                    <div id="chartdiv" style="width: 1316px;">
+                        <div id="container" data-highcharts-chart="0"><div class="highcharts-container" id="highcharts-0" style="position: relative; overflow: hidden; width: 1316px; height: 400px; text-align: left; line-height: normal; z-index: 0; left: 0px; top: 0px;"><svg version="1.1" style="font-family:&quot;Lucida Grande&quot;, &quot;Lucida Sans Unicode&quot;, Arial, Helvetica, sans-serif;font-size:12px;" xmlns="http://www.w3.org/2000/svg" width="1316" height="400"><desc>Created with Highcharts 4.2.1</desc><defs><linearGradient x1="0" y1="0" x2="1" y2="1" id="highcharts-1"><stop offset="0" stop-color="rgb(255, 255, 255)" stop-opacity="1"></stop><stop offset="1" stop-color="rgb(240, 240, 255)" stop-opacity="1"></stop></linearGradient><clipPath id="highcharts-2"><rect x="0" y="0" width="1296" height="300"></rect></clipPath></defs><rect x="1" y="1" width="1314" height="398" strokeWidth="2" fill="url(http://115.238.45.165:8003/modelPlatform/areaEconomyDev/index.do#highcharts-1)" stroke="#4572A7" stroke-width="2" class=" highcharts-background"></rect><rect x="10" y="46" width="1296" height="300" fill="none" isShadow="true" stroke="black" stroke-opacity="0.049999999999999996" stroke-width="5" transform="translate(1, 1)"></rect><rect x="10" y="46" width="1296" height="300" fill="none" isShadow="true" stroke="black" stroke-opacity="0.09999999999999999" stroke-width="3" transform="translate(1, 1)"></rect><rect x="10" y="46" width="1296" height="300" fill="none" isShadow="true" stroke="black" stroke-opacity="0.15" stroke-width="1" transform="translate(1, 1)"></rect><rect x="10" y="46" width="1296" height="300" fill="rgba(255, 255, 255, .9)"></rect><g class="highcharts-button" style="cursor:default;" stroke-linecap="round" transform="translate(1282,10)"><title>图表菜单</title><rect x="0.5" y="0.5" width="24" height="22" strokeWidth="1" fill="white" stroke="#CCCCCC" stroke-width="1" rx="2" ry="2"></rect><path fill="#E0E0E0" d="M 6 6.5 L 20 6.5 M 6 11.5 L 20 11.5 M 6 16.5 L 20 16.5" stroke="#666" stroke-width="3" zIndex="1"></path><text x="0" zIndex="1" style="color:black;fill:black;" y="12"></text></g><g class="highcharts-grid" zIndex="1"><path fill="none" d="M 658 196 L 658 76" stroke="#D8D8D8" stroke-width="1" zIndex="1" opacity="1"></path><path fill="none" d="M 658 196 L 761.9230484541326 136" stroke="#D8D8D8" stroke-width="1" zIndex="1" opacity="1"></path><path fill="none" d="M 658 196 L 761.9230484541326 255.99999999999997" stroke="#D8D8D8" stroke-width="1" zIndex="1" opacity="1"></path><path fill="none" d="M 658 196 L 658 316" stroke="#D8D8D8" stroke-width="1" zIndex="1" opacity="1"></path><path fill="none" d="M 658 196 L 554.0769515458674 256.00000000000006" stroke="#D8D8D8" stroke-width="1" zIndex="1" opacity="1"></path><path fill="none" d="M 658 196 L 554.0769515458674 136.00000000000006" stroke="#D8D8D8" stroke-width="1" zIndex="1" opacity="1"></path><path fill="none" d="M 658 196 L 658 76" stroke="#D8D8D8" stroke-width="1" zIndex="1" opacity="1"></path></g><g class="highcharts-grid" zIndex="1"><path fill="none" d="M 658 196 L 658 196 L 658 196 L 658 196 L 658 196 L 658 196 L 658 196 L 658 196" stroke="#E0E0E0" stroke-width="1" opacity="1"></path><path fill="none" d="M 658 184 L 658 184 L 647.6076951545867 190 L 647.6076951545867 202 L 658 208 L 668.3923048454133 202 L 668.3923048454133 190 L 658 184" stroke="#E0E0E0" stroke-width="1" opacity="1"></path><path fill="none" d="M 658 172 L 658 172 L 637.2153903091735 184 L 637.2153903091735 208 L 658 220 L 678.7846096908265 208 L 678.7846096908265 184 L 658 172" stroke="#E0E0E0" stroke-width="1" opacity="1"></path><path fill="none" d="M 658 160 L 658 160 L 626.8230854637602 178.00000000000003 L 626.8230854637602 214 L 658 232 L 689.1769145362398 214 L 689.1769145362398 178 L 658 160" stroke="#E0E0E0" stroke-width="1" opacity="1"></path><path fill="none" d="M 658 148 L 658 148 L 616.430780618347 172.00000000000003 L 616.430780618347 220 L 658 244 L 699.569219381653 220 L 699.569219381653 172 L 658 148" stroke="#E0E0E0" stroke-width="1" opacity="1"></path><path fill="none" d="M 658 136 L 658 136 L 606.0384757729337 166.00000000000003 L 606.0384757729337 226.00000000000003 L 658 256 L 709.9615242270663 226 L 709.9615242270663 166 L 658 136" stroke="#E0E0E0" stroke-width="1" opacity="1"></path><path fill="none" d="M 658 124 L 658 124 L 595.6461709275204 160.00000000000006 L 595.6461709275204 232.00000000000003 L 658 268 L 720.3538290724796 232 L 720.3538290724796 160 L 658 124" stroke="#E0E0E0" stroke-width="1" opacity="1"></path><path fill="none" d="M 658 112 L 658 112 L 585.2538660821072 154.00000000000006 L 585.2538660821072 238.00000000000003 L 658 280 L 730.7461339178928 238 L 730.7461339178928 154 L 658 112" stroke="#E0E0E0" stroke-width="1" opacity="1"></path><path fill="none" d="M 658 100 L 658 100 L 574.8615612366939 148.00000000000006 L 574.8615612366939 244.00000000000003 L 658 292 L 741.1384387633061 244 L 741.1384387633061 148 L 658 100" stroke="#E0E0E0" stroke-width="1" opacity="1"></path><path fill="none" d="M 658 88 L 658 88 L 564.4692563912806 142.00000000000006 L 564.4692563912806 250.00000000000003 L 658 304 L 751.5307436087194 249.99999999999997 L 751.5307436087194 142 L 658 88" stroke="#E0E0E0" stroke-width="1" opacity="1"></path><path fill="none" d="M 658 76 L 658 76 L 554.0769515458674 136.00000000000006 L 554.0769515458674 256.00000000000006 L 658 316 L 761.9230484541326 255.99999999999997 L 761.9230484541326 136 L 658 76" stroke="#E0E0E0" stroke-width="1" opacity="1"></path><path fill="none" d="M 658 190 L 658 190 L 652.8038475772934 193 L 652.8038475772934 199 L 658 202 L 663.1961524227066 199 L 663.1961524227066 193 L 658 190" stroke="#E0E0E0" stroke-width="1" opacity="1"></path><path fill="none" d="M 658 178 L 658 178 L 642.4115427318801 187 L 642.4115427318801 205 L 658 214 L 673.5884572681199 205 L 673.5884572681199 187 L 658 178" stroke="#E0E0E0" stroke-width="1" opacity="1"></path><path fill="none" d="M 658 166 L 658 166 L 632.0192378864668 181.00000000000003 L 632.0192378864668 211 L 658 226 L 683.9807621135332 211 L 683.9807621135332 181 L 658 166" stroke="#E0E0E0" stroke-width="1" opacity="1"></path><path fill="none" d="M 658 154 L 658 154 L 621.6269330410536 175.00000000000003 L 621.6269330410536 217 L 658 238 L 694.3730669589464 217 L 694.3730669589464 175 L 658 154" stroke="#E0E0E0" stroke-width="1" opacity="1"></path><path fill="none" d="M 658 142 L 658 142 L 611.2346281956403 169.00000000000003 L 611.2346281956403 223.00000000000003 L 658 250 L 704.7653718043597 223 L 704.7653718043597 169 L 658 142" stroke="#E0E0E0" stroke-width="1" opacity="1"></path><path fill="none" d="M 658 130 L 658 130 L 600.842323350227 163.00000000000006 L 600.842323350227 229.00000000000003 L 658 262 L 715.157676649773 229 L 715.157676649773 163 L 658 130" stroke="#E0E0E0" stroke-width="1" opacity="1"></path><path fill="none" d="M 658 118 L 658 118 L 590.4500185048138 157.00000000000006 L 590.4500185048138 235.00000000000003 L 658 274 L 725.5499814951862 235 L 725.5499814951862 157 L 658 118" stroke="#E0E0E0" stroke-width="1" opacity="1"></path><path fill="none" d="M 658 106 L 658 106 L 580.0577136594005 151.00000000000006 L 580.0577136594005 241.00000000000003 L 658 286 L 735.9422863405995 241 L 735.9422863405995 151 L 658 106" stroke="#E0E0E0" stroke-width="1" opacity="1"></path><path fill="none" d="M 658 94 L 658 94 L 569.6654088139873 145.00000000000006 L 569.6654088139873 247.00000000000003 L 658 298 L 746.3345911860127 247 L 746.3345911860127 145 L 658 94" stroke="#E0E0E0" stroke-width="1" opacity="1"></path><path fill="none" d="M 658 82 L 658 82 L 559.273103968574 139.00000000000006 L 559.273103968574 253.00000000000003 L 658 310 L 756.726896031426 252.99999999999997 L 756.726896031426 139 L 658 82" stroke="#E0E0E0" stroke-width="1" opacity="1"></path><path fill="none" d="M 658 196 L 658 196 L 658 196 L 658 196 L 658 196 L 658 196 L 658 196 L 658 196" stroke="#D8D8D8" stroke-width="1" zIndex="1" opacity="1"></path><path fill="none" d="M 658 136 L 658 136 L 606.0384757729337 166.00000000000003 L 606.0384757729337 226.00000000000003 L 658 256 L 709.9615242270663 226 L 709.9615242270663 166 L 658 136" stroke="#D8D8D8" stroke-width="1" zIndex="1" opacity="1"></path><path fill="none" d="M 658 76 L 658 76 L 554.0769515458674 136.00000000000006 L 554.0769515458674 256.00000000000006 L 658 316 L 761.9230484541326 255.99999999999997 L 761.9230484541326 136 L 658 76" stroke="#D8D8D8" stroke-width="1" zIndex="1" opacity="1"></path><path fill="none" d="M 658 166 L 658 166 L 632.0192378864668 181.00000000000003 L 632.0192378864668 211 L 658 226 L 683.9807621135332 211 L 683.9807621135332 181 L 658 166" stroke="#D8D8D8" stroke-width="1" zIndex="1" opacity="1"></path><path fill="none" d="M 658 106 L 658 106 L 580.0577136594005 151.00000000000006 L 580.0577136594005 241.00000000000003 L 658 286 L 735.9422863405995 241 L 735.9422863405995 151 L 658 106" stroke="#D8D8D8" stroke-width="1" zIndex="1" opacity="1"></path></g><rect x="9.5" y="45.5" width="1297" height="301" strokeWidth="-1" stroke="#C0C0C0" stroke-width="1" fill="none" zIndex="1"></rect><g class="highcharts-axis" zIndex="2"></g><g class="highcharts-axis" zIndex="2"><path fill="none" d="M 658 196 L 658 196" stroke="#000" stroke-width="1" opacity="1"></path><path fill="none" d="M 658 136 L 658 136" stroke="#000" stroke-width="1" opacity="1"></path><path fill="none" d="M 658 76 L 658 76" stroke="#000" stroke-width="1" opacity="1"></path><path fill="none" d="M 658 166 L 658 166" stroke="#000" stroke-width="1" opacity="1"></path><path fill="none" d="M 658 106 L 658 106" stroke="#000" stroke-width="1" opacity="1"></path></g><g class="highcharts-series-group" zIndex="3"><path fill="#058DC7" fill-opacity="0.25" d="M 0 0"></path><path fill="#50B432" fill-opacity="0.25" d="M 0 0"></path><path fill="#ED561B" fill-opacity="0.25" d="M 0 0"></path><path fill="#DDDF00" fill-opacity="0.25" d="M 0 0"></path><g class="highcharts-series highcharts-series-0" zIndex="0.1" transform="translate(10,46) scale(1 1)" clip-path="url(http://115.238.45.165:8003/modelPlatform/areaEconomyDev/index.do#highcharts-2)"><path fill="none" d="M 648 98.8416 L 694.6676841388128 123.0564 L 695.7204246196532 177.5514 L 648 203.1498 L 599.3323167936874 178.09830000000002 L 622.4562343052164 135.25230000000002 L 648 98.8416" stroke="#058DC7" stroke-width="2" zIndex="1" stroke-linejoin="round" stroke-linecap="round"></path><path fill="none" d="M 638 98.8416 L 648 98.8416 L 694.6676841388128 123.0564 L 695.7204246196532 177.5514 L 648 203.1498 L 599.3323167936874 178.09830000000002 L 622.4562343052164 135.25230000000002 L 648 98.8416 L 658 98.8416" stroke-linejoin="round" visibility="visible" stroke="rgba(192,192,192,0.0001)" stroke-width="22" zIndex="2" class=" highcharts-tracker" style=""></path></g><g class="highcharts-markers highcharts-series-0 highcharts-tracker" zIndex="0.1" transform="translate(10,46) scale(1 1)" style="" clip-path="none"><path fill="#058DC7" d="M 622 131.25230000000002 C 627.328 131.25230000000002 627.328 139.25230000000002 622 139.25230000000002 C 616.672 139.25230000000002 616.672 131.25230000000002 622 131.25230000000002 Z" stroke-width="1"></path><path fill="#058DC7" d="M 599 174.09830000000002 C 604.328 174.09830000000002 604.328 182.09830000000002 599 182.09830000000002 C 593.672 182.09830000000002 593.672 174.09830000000002 599 174.09830000000002 Z" stroke-width="1"></path><path fill="#058DC7" d="M 648 199.1498 C 653.328 199.1498 653.328 207.1498 648 207.1498 C 642.672 207.1498 642.672 199.1498 648 199.1498 Z" stroke-width="1"></path><path fill="#058DC7" d="M 695 173.5514 C 700.328 173.5514 700.328 181.5514 695 181.5514 C 689.672 181.5514 689.672 173.5514 695 173.5514 Z"></path><path fill="#058DC7" d="M 694 119.0564 C 699.328 119.0564 699.328 127.0564 694 127.0564 C 688.672 127.0564 688.672 119.0564 694 119.0564 Z"></path><path fill="#058DC7" d="M 648 94.8416 C 653.328 94.8416 653.328 102.8416 648 102.8416 C 642.672 102.8416 642.672 94.8416 648 94.8416 Z"></path></g><g class="highcharts-series highcharts-series-1" zIndex="0.1" transform="translate(10,46) scale(1 1)" clip-path="url(http://115.238.45.165:8003/modelPlatform/areaEconomyDev/index.do#highcharts-2)"><path fill="none" d="M 648 91.78620000000001 L 697.3026530323673 121.5351 L 698.4458065653628 179.1249 L 648 207.9678 L 596.5425025579362 179.70900000000003 L 604.0239228161493 124.61040000000003 L 648 91.78620000000001" stroke="#50B432" stroke-width="2" zIndex="1" stroke-linejoin="round" stroke-linecap="round"></path><path fill="none" d="M 638 91.78620000000001 L 648 91.78620000000001 L 697.3026530323673 121.5351 L 698.4458065653628 179.1249 L 648 207.9678 L 596.5425025579362 179.70900000000003 L 604.0239228161493 124.61040000000003 L 648 91.78620000000001 L 658 91.78620000000001" stroke-linejoin="round" visibility="visible" stroke="rgba(192,192,192,0.0001)" stroke-width="22" zIndex="2" class=" highcharts-tracker" style=""></path></g><g class="highcharts-markers highcharts-series-1 highcharts-tracker" zIndex="0.1" transform="translate(10,46) scale(1 1)" style="" clip-path="none"><path fill="#50B432" d="M 604 120.61040000000003 L 608 124.61040000000003 604 128.61040000000003 600 124.61040000000003 Z" stroke-width="1"></path><path fill="#50B432" d="M 596 175.70900000000003 L 600 179.70900000000003 596 183.70900000000003 592 179.70900000000003 Z" stroke-width="1"></path><path fill="#50B432" d="M 648 203.9678 L 652 207.9678 648 211.9678 644 207.9678 Z" stroke-width="1"></path><path fill="#50B432" d="M 698 175.1249 L 702 179.1249 698 183.1249 694 179.1249 Z"></path><path fill="#50B432" d="M 697 117.5351 L 701 121.5351 697 125.5351 693 121.5351 Z"></path><path fill="#50B432" d="M 648 87.78620000000001 L 652 91.78620000000001 648 95.78620000000001 644 91.78620000000001 Z"></path></g><g class="highcharts-series highcharts-series-2" zIndex="0.1" transform="translate(10,46) scale(1 1)" clip-path="url(http://115.238.45.165:8003/modelPlatform/areaEconomyDev/index.do#highcharts-2)"><path fill="none" d="M 648 87.57299999999998 L 701.7848541121941 118.94730000000001 L 700.7186036350547 180.4371 L 648 211.95780000000002 L 596.9400082182733 179.47950000000003 L 590.5622507346432 116.83830000000003 L 648 87.57299999999998" stroke="#ED561B" stroke-width="2" zIndex="1" stroke-linejoin="round" stroke-linecap="round"></path><path fill="none" d="M 638 87.57299999999998 L 648 87.57299999999998 L 701.7848541121941 118.94730000000001 L 700.7186036350547 180.4371 L 648 211.95780000000002 L 596.9400082182733 179.47950000000003 L 590.5622507346432 116.83830000000003 L 648 87.57299999999998 L 658 87.57299999999998" stroke-linejoin="round" visibility="visible" stroke="rgba(192,192,192,0.0001)" stroke-width="22" zIndex="2" class=" highcharts-tracker" style=""></path></g><g class="highcharts-markers highcharts-series-2 highcharts-tracker" zIndex="0.1" transform="translate(10,46) scale(1 1)" style="" clip-path="none"><path fill="#ED561B" d="M 586 112.83830000000003 L 594 112.83830000000003 594 120.83830000000003 586 120.83830000000003 Z" stroke-width="1"></path><path fill="#ED561B" d="M 592 175.47950000000003 L 600 175.47950000000003 600 183.47950000000003 592 183.47950000000003 Z" stroke-width="1"></path><path fill="#ED561B" d="M 644 207.95780000000002 L 652 207.95780000000002 652 215.95780000000002 644 215.95780000000002 Z" stroke-width="1"></path><path fill="#ED561B" d="M 696 176.4371 L 704 176.4371 704 184.4371 696 184.4371 Z"></path><path fill="#ED561B" d="M 697 114.94730000000001 L 705 114.94730000000001 705 122.94730000000001 697 122.94730000000001 Z"></path><path fill="#ED561B" d="M 644 83.57299999999998 L 652 83.57299999999998 652 91.57299999999998 644 91.57299999999998 Z"></path></g><g class="highcharts-series highcharts-series-3" zIndex="0.1" transform="translate(10,46) scale(1 1)" clip-path="url(http://115.238.45.165:8003/modelPlatform/areaEconomyDev/index.do#highcharts-2)"><path fill="none" d="M 648 81.7992 L 706.0914252401334 116.46089999999998 L 704.9617817034369 182.8869 L 648 216.92399999999998 L 591.3395951370801 182.71290000000002 L 567.1109756204835 103.29870000000005 L 648 81.7992" stroke="#DDDF00" stroke-width="2" zIndex="1" stroke-linejoin="round" stroke-linecap="round"></path><path fill="none" d="M 638 81.7992 L 648 81.7992 L 706.0914252401334 116.46089999999998 L 704.9617817034369 182.8869 L 648 216.92399999999998 L 591.3395951370801 182.71290000000002 L 567.1109756204835 103.29870000000005 L 648 81.7992 L 658 81.7992" stroke-linejoin="round" visibility="visible" stroke="rgba(192,192,192,0.0001)" stroke-width="22" zIndex="2" class=" highcharts-tracker" style=""></path></g><g class="highcharts-markers highcharts-series-3 highcharts-tracker" zIndex="0.1" transform="translate(10,46) scale(1 1)" style="" clip-path="none"><path fill="#DDDF00" d="M 567 99.29870000000005 L 571 107.29870000000005 563 107.29870000000005 Z" stroke-width="1"></path><path fill="#DDDF00" d="M 591 178.71290000000002 L 595 186.71290000000002 587 186.71290000000002 Z" stroke-width="1"></path><path fill="#DDDF00" d="M 648 212.92399999999998 L 652 220.92399999999998 644 220.92399999999998 Z" stroke-width="1"></path><path fill="#DDDF00" d="M 704 178.8869 L 708 186.8869 700 186.8869 Z"></path><path fill="#DDDF00" d="M 706 112.46089999999998 L 710 120.46089999999998 702 120.46089999999998 Z"></path><path fill="#DDDF00" d="M 648 77.7992 L 652 85.7992 644 85.7992 Z"></path></g></g><text x="658" text-anchor="middle" class="highcharts-title" zIndex="4" style="color:#000;font-size:18px;font:bold 16px &quot;Trebuchet MS&quot;, Verdana, sans-serif;fill:#000;width:1252px;" y="24">海洋经济可持续发展水平的综合得分变化趋势</text><g class="highcharts-legend" zIndex="7" transform="translate(504,358)"><g zIndex="1"><g><g class="highcharts-legend-item" zIndex="1" transform="translate(8,3)"><path fill="none" d="M 0 11 L 16 11" stroke="#058DC7" stroke-width="2"></path><path fill="#058DC7" d="M 8 7 C 13.328 7 13.328 15 8 15 C 2.6719999999999997 15 2.6719999999999997 7 8 7 Z"></path><text x="21" style="color:black;font-size:12px;font-weight:bold;cursor:pointer;font:9pt Trebuchet MS, Verdana, sans-serif;fill:black;" text-anchor="start" zIndex="2" y="15">2011年</text></g><g class="highcharts-legend-item" zIndex="1" transform="translate(86,3)"><path fill="none" d="M 0 11 L 16 11" stroke="#50B432" stroke-width="2"></path><path fill="#50B432" d="M 8 7 L 12 11 8 15 4 11 Z"></path><text x="21" y="15" style="color:black;font-size:12px;font-weight:bold;cursor:pointer;font:9pt Trebuchet MS, Verdana, sans-serif;fill:black;" text-anchor="start" zIndex="2">2012年</text></g><g class="highcharts-legend-item" zIndex="1" transform="translate(164,3)"><path fill="none" d="M 0 11 L 16 11" stroke="#ED561B" stroke-width="2"></path><path fill="#ED561B" d="M 4 7 L 12 7 12 15 4 15 Z"></path><text x="21" y="15" style="color:black;font-size:12px;font-weight:bold;cursor:pointer;font:9pt Trebuchet MS, Verdana, sans-serif;fill:black;" text-anchor="start" zIndex="2">2013年</text></g><g class="highcharts-legend-item" zIndex="1" transform="translate(242,3)"><path fill="none" d="M 0 11 L 16 11" stroke="#DDDF00" stroke-width="2"></path><path fill="#DDDF00" d="M 8 7 L 12 15 4 15 Z"></path><text x="21" y="15" style="color:black;font-size:12px;font-weight:bold;cursor:pointer;font:9pt Trebuchet MS, Verdana, sans-serif;fill:black;" text-anchor="start" zIndex="2">2014年</text></g></g></g></g><g class="highcharts-axis-labels highcharts-xaxis-labels" zIndex="7"><text x="658" style="color:#000;cursor:default;font-size:11px;font:11px Trebuchet MS, Verdana, sans-serif;fill:#000;width:175px;text-overflow:clip;" text-anchor="middle" transform="translate(0,0)" y="64.5" opacity="1">经济发展</text><text x="774.9134295108992" style="color:#000;cursor:default;font-size:11px;font:11px Trebuchet MS, Verdana, sans-serif;fill:#000;width:175px;text-overflow:clip;" text-anchor="start" transform="translate(0,0)" y="132" opacity="1">社会发展</text><text x="774.9134295108993" style="color:#000;cursor:default;font-size:11px;font:11px Trebuchet MS, Verdana, sans-serif;fill:#000;width:175px;text-overflow:clip;" text-anchor="start" transform="translate(0,0)" y="267" opacity="1">科技创新</text><text x="658" style="color:#000;cursor:default;font-size:11px;font:11px Trebuchet MS, Verdana, sans-serif;fill:#000;width:175px;text-overflow:clip;" text-anchor="middle" transform="translate(0,0)" y="334.5" opacity="1">资源供给</text><text x="541.0865704891008" style="color:#000;cursor:default;font-size:11px;font:11px Trebuchet MS, Verdana, sans-serif;fill:#000;width:175px;text-overflow:clip;" text-anchor="end" transform="translate(0,0)" y="267.00000000000006" opacity="1">环境保护</text><text x="541.0865704891007" style="color:#000;cursor:default;font-size:11px;font:11px Trebuchet MS, Verdana, sans-serif;fill:#000;width:175px;text-overflow:clip;" text-anchor="end" transform="translate(0,0)" y="132.00000000000009" opacity="1">综合得分</text><text x="0" style="color:#000;cursor:default;font-size:11px;font:11px Trebuchet MS, Verdana, sans-serif;fill:#000;width:175px;text-overflow:clip;" text-anchor="middle" transform="translate(0,0)" y="-9999">6</text></g><g class="highcharts-axis-labels highcharts-yaxis-labels" zIndex="7"><text x="655" style="color:#000;cursor:default;font-size:11px;font:11px Trebuchet MS, Verdana, sans-serif;fill:#000;width:424px;text-overflow:clip;" text-anchor="end" transform="translate(0,0)" y="194" opacity="1">-10</text><text x="655" style="color:#000;cursor:default;font-size:11px;font:11px Trebuchet MS, Verdana, sans-serif;fill:#000;width:424px;text-overflow:clip;" text-anchor="end" transform="translate(0,0)" y="134" opacity="1">0</text><text x="0" style="color:#000;cursor:default;font-size:11px;font:11px Trebuchet MS, Verdana, sans-serif;fill:#000;width:424px;text-overflow:clip;" text-anchor="end" transform="translate(0,0)" y="-9999">10</text><text x="655" style="color:#000;cursor:default;font-size:11px;font:11px Trebuchet MS, Verdana, sans-serif;fill:#000;width:424px;text-overflow:clip;" text-anchor="end" transform="translate(0,0)" y="164" opacity="1">-5</text><text x="655" style="color:#000;cursor:default;font-size:11px;font:11px Trebuchet MS, Verdana, sans-serif;fill:#000;width:424px;text-overflow:clip;" text-anchor="end" transform="translate(0,0)" y="104" opacity="1">5</text></g><g class="highcharts-tooltip" zIndex="8" style="cursor:default;padding:0;pointer-events:none;white-space:nowrap;" transform="translate(622,-9999)" opacity="0" visibility="visible"><path fill="none" d="M 3.5 0.5 L 113.5 0.5 C 116.5 0.5 116.5 0.5 116.5 3.5 L 116.5 89.5 C 116.5 92.5 116.5 92.5 113.5 92.5 L 3.5 92.5 C 0.5 92.5 0.5 92.5 0.5 89.5 L 0.5 3.5 C 0.5 0.5 0.5 0.5 3.5 0.5" isShadow="true" stroke="black" stroke-opacity="0.049999999999999996" stroke-width="5" transform="translate(1, 1)" width="116" height="92"></path><path fill="none" d="M 3.5 0.5 L 113.5 0.5 C 116.5 0.5 116.5 0.5 116.5 3.5 L 116.5 89.5 C 116.5 92.5 116.5 92.5 113.5 92.5 L 3.5 92.5 C 0.5 92.5 0.5 92.5 0.5 89.5 L 0.5 3.5 C 0.5 0.5 0.5 0.5 3.5 0.5" isShadow="true" stroke="black" stroke-opacity="0.09999999999999999" stroke-width="3" transform="translate(1, 1)" width="116" height="92"></path><path fill="none" d="M 3.5 0.5 L 113.5 0.5 C 116.5 0.5 116.5 0.5 116.5 3.5 L 116.5 89.5 C 116.5 92.5 116.5 92.5 113.5 92.5 L 3.5 92.5 C 0.5 92.5 0.5 92.5 0.5 89.5 L 0.5 3.5 C 0.5 0.5 0.5 0.5 3.5 0.5" isShadow="true" stroke="black" stroke-opacity="0.15" stroke-width="1" transform="translate(1, 1)" width="116" height="92"></path><path fill="rgba(249, 249, 249, .85)" d="M 3.5 0.5 L 113.5 0.5 C 116.5 0.5 116.5 0.5 116.5 3.5 L 116.5 89.5 C 116.5 92.5 116.5 92.5 113.5 92.5 L 3.5 92.5 C 0.5 92.5 0.5 92.5 0.5 89.5 L 0.5 3.5 C 0.5 0.5 0.5 0.5 3.5 0.5" stroke="#058DC7" stroke-width="1"></path><text x="8" zIndex="1" style="font-size:12px;color:#333333;fill:#333333;" y="20"><tspan style="font-size: 10px">综合得分</tspan><tspan style="fill:#058DC7" x="8" dy="15">2011年: </tspan><tspan style="font-weight:bold" dx="0">-5.0841</tspan><tspan style="fill:#50B432" x="8" dy="15">2012年: </tspan><tspan style="font-weight:bold" dx="0">-1.5368</tspan><tspan style="fill:#ED561B" x="8" dy="15">2013年: </tspan><tspan style="font-weight:bold" dx="0">1.0539</tspan><tspan style="fill:#DDDF00" x="8" dy="15">2014年: </tspan><tspan style="font-weight:bold" dx="0">5.5671</tspan></text></g><text x="1306" text-anchor="end" zIndex="8" style="cursor:pointer;color:#909090;font-size:9px;fill:#909090;" y="395">www.hzzzwl.com</text></svg></div></div>	
+                    </div>
+                    
+                    <script type="text/javascript">
+                        function showInfoDiv(){
+                            $("#info_div_flag_show").toggle();
+                            $("#info_div_flag_hide").toggle();
+                            $("#info_div").toggle();
+                        }
+                        function showZhiBDiv(){
+                            $("#zhiB_div_flag_show").toggle();
+                            $("#zhiB_div_flag_hide").toggle();
+                            $("#zhiB_div").toggle();
+                        }
+                    </script>
+                    <div class="hei12" style="padding:20px 0 5px 5px;">
+                        <p style="margin-top:10px;"><b>海洋经济可持续发展水平评价指标体系</b>
+                        <span onclick="showZhiBDiv()" title="展开" id="zhiB_div_flag_show" style="cursor:pointer;">+</span>
+                        <span onclick="showZhiBDiv()" title="收起" id="zhiB_div_flag_hide" style="display:none;cursor:pointer;">-</span>
+                        </p>
+                        <div id="zhiB_div" style="display:none;">
+                        <table class="table" cellspacing="0" cellpadding="0" width="100%" align="center" border="0">
+                            <tbody><tr>
+                                <th width="15%"><strong>一级指标</strong></th>
+                                <th width="15%"><strong>二级指标</strong></th>
+                                <th width="15%"><strong>编号</strong></th>
+                                <th width="15%"><strong>指标属性</strong></th>
+                            </tr>
+                            <tr>
+                                <td class="hei12" rowspan="8" height="24">经济发展</td>
+                                <td class="hei12" height="24">海洋生产总值（亿元）</td>
+                                <td class="hei12" height="24">A1</td>
+                                <td class="hei12" height="24">正</td>
+                            </tr>
+                            <tr>
+                                <td class="hei12" height="24">海洋生产总值占比（%）</td>
+                                <td class="hei12" height="24">A2</td>
+                                <td class="hei12" height="24">正</td>
+                            </tr>
+                            <tr>
+                                <td class="hei12" height="24">海洋第三产业增加值（亿元）</td>
+                                <td class="hei12" height="24">A3</td>
+                                <td class="hei12" height="24">正</td>
+                            </tr>
+                            <tr>
+                                <td class="hei12" height="24">海洋第三产业增加值占比（%）</td>
+                                <td class="hei12" height="24">A4</td>
+                                <td class="hei12" height="24">正</td>
+                            </tr>
+                            <tr>
+                                <td class="hei12" height="24">滨海旅游业增加值（亿元）</td>
+                                <td class="hei12" height="24">A5</td>
+                                <td class="hei12" height="24">正</td>
+                            </tr>
+                            <tr>
+                                <td class="hei12" height="24">涉海劳动生产率（亿元/万人）</td>
+                                <td class="hei12" height="24">A6</td>
+                                <td class="hei12" height="24">正</td>
+                            </tr>
+                            <tr>
+                                <td class="hei12" height="24">海洋经济密度（亿元/km）</td>
+                                <td class="hei12" height="24">A7</td>
+                                <td class="hei12" height="24">正</td>
+                            </tr>
+                            <tr>
+                                <td class="hei12" height="24">海洋工业集聚度（%）</td>
+                                <td class="hei12" height="24">A8</td>
+                                <td class="hei12" height="24">正</td>
+                            </tr>
+                            <tr>
+                                <td class="hei12" rowspan="7" height="24">社会发展</td>
+                                <td class="hei12" height="24">涉海就业人员数（万人）</td>
+                                <td class="hei12" height="24">B1</td>
+                                <td class="hei12" height="24">正</td>
+                            </tr>
+                            <tr>
+                                <td class="hei12" height="24">涉海就业人员占全省就业的比重（%）</td>
+                                <td class="hei12" height="24">B2</td>
+                                <td class="hei12" height="24">正</td>
+                            </tr>
+                            <tr>
+                                <td class="hei12" height="24">沿海城市城镇居民可支配收入（元）</td>
+                                <td class="hei12" height="24">B3</td>
+                                <td class="hei12" height="24">正</td>
+                            </tr>
+                            <tr>
+                                <td class="hei12" height="24">沿海地区渔民人均纯收入（元）</td>
+                                <td class="hei12" height="24">B4</td>
+                                <td class="hei12" height="24">正</td>
+                            </tr>
+                            <tr>
+                                <td class="hei12" height="24">渔港建设投资额（万元）</td>
+                                <td class="hei12" height="24">B5</td>
+                                <td class="hei12" height="24">正</td>
+                            </tr>
+                            <tr class="row_bg">
+                                <td class="hei12" height="24">涉海专业高校在校生人数（人）</td>
+                                <td class="hei12" height="24">B6</td>
+                                <td class="hei12" height="24">正</td>
+                            </tr>
+                            <tr>
+                                <td class="hei12" height="24">开设海洋专业高等院校专任教师人数（人）</td>
+                                <td class="hei12" height="24">B7</td>
+                                <td class="hei12" height="24">正</td>
+                            </tr>
+                            <tr>
+                                <td class="hei12" rowspan="5" height="24">科技创新</td>
+                                <td class="hei12 row_bg" height="24">海洋科研机构R&amp;D经费内部支出（千元）</td>
+                                <td class="hei12 row_bg" height="24">C1</td>
+                                <td class="hei12 row_bg" height="24">正</td>
+                            </tr>
+                            <tr>
+                                <td class="hei12" height="24">海洋科研机构科技活动人员（人）</td>
+                                <td class="hei12" height="24">C2</td>
+                                <td class="hei12" height="24">正</td>
+                            </tr>
+                            <tr>
+                                <td class="hei12" height="24">海洋科研机构科技专利授权数（个）</td>
+                                <td class="hei12" height="24">C3</td>
+                                <td class="hei12" height="24">正</td>
+                            </tr>
+                            <tr>
+                                <td class="hei12" height="24">海洋科研机构科技论文数（篇）</td>
+                                <td class="hei12" height="24">C4</td>
+                                <td class="hei12" height="24">正</td>
+                            </tr>
+                            <tr>
+                                <td class="hei12" height="24">海洋科研机构科技课题数（项）</td>
+                                <td class="hei12" height="24">C5</td>
+                                <td class="hei12" height="24">正</td>
+                            </tr>
+                            <tr>
+                                <td class="hei12" rowspan="7" height="24">资源供给</td>
+                                <td class="hei12" height="24">累计确权海域面积（公顷）</td>
+                                <td class="hei12" height="24">D1</td>
+                                <td class="hei12" height="24">正</td>
+                            </tr>
+                            <tr>
+                                <td class="hei12" height="24">海水养殖面积（公顷）</td>
+                                <td class="hei12" height="24">D2</td>
+                                <td class="hei12" height="24">正</td>
+                            </tr>
+                            <tr>
+                                <td class="hei12" height="24">海洋年发电量（万千瓦小时）
+                                </td>
+                                <td class="hei12" height="24">D3</td>
+                                <td class="hei12" height="24">正</td>
+                            </tr>
+                            <tr>
+                                <td class="hei12" height="24">矿产价值（万元）</td>
+                                <td class="hei12" height="24">D4</td>
+                                <td class="hei12" height="24">正</td>
+                            </tr>
+                            <tr>
+                                <td class="hei12" height="24">海水利用量（万吨）</td>
+                                <td class="hei12" height="24">D5</td>
+                                <td class="hei12" height="24">正</td>
+                            </tr>
+                            <tr>
+                                <td class="hei12" height="24">海洋水产品产量（吨）</td>
+                                <td class="hei12" height="24">D6</td>
+                                <td class="hei12" height="24">正</td>
+                            </tr>
+                            <tr>
+                                <td class="hei12" height="24">港口生产用万吨级码头泊位数（个）</td>
+                                <td class="hei12" height="24">D7</td>
+                                <td class="hei12" height="24">正</td>
+                            </tr>
+                            <tr>
+                                <td class="hei12" rowspan="6" height="24">环境保护</td>
+                                <td class="hei12 row_bg" height="24">海洋保护区面积（平方公里）</td>
+                                <td class="hei12 row_bg" height="24">E1</td>
+                                <td class="hei12 row_bg" height="24">正</td>
+                            </tr>
+                            <tr>
+                                <td class="hei12" height="24">近岸海域海水水质（%）</td>
+                                <td class="hei12" height="24">E2</td>
+                                <td class="hei12" height="24">正</td>
+                            </tr>
+                            <tr>
+                                <td class="hei12" height="24">沿海地带工业废水处理量（万吨）</td>
+                                <td class="hei12" height="24">E3</td>
+                                <td class="hei12" height="24">正</td>
+                            </tr>
+                            <tr>
+                                <td class="hei12" height="24">沿海地带工业固体废弃物综合利用率（%）</td>
+                                <td class="hei12" height="24">E4</td>
+                                <td class="hei12" height="24">正</td>
+                            </tr>
+                            <tr>
+                                <td class="hei12" height="24">水质监测站数量（个）</td>
+                                <td class="hei12" height="24">E5</td>
+                                <td class="hei12" height="24">正</td>
+                            </tr>
+                            <tr>
+                                <td class="hei12" height="24">入海排污口监测点数量（个）</td>
+                                <td class="hei12" height="24">E6</td>
+                                <td class="hei12" height="24">正</td>
+                            </tr>
+                        </tbody></table>
+                        </div>
+                    </div>
+                    
+                    <div class="span_div_font_hei12" style="padding:20px 0 0 5px;">
+                            <span style="margin-top:10px;"><b>方法说明</b></span>
+                            <span onclick="showInfoDiv()" title="展开" id="info_div_flag_show" style="cursor:pointer;">+</span>
+                            <span onclick="showInfoDiv()" title="收起" id="info_div_flag_hide" style="display:none;cursor:pointer;">-</span>
+                            <br>
+                            <div id="info_div" style="display:none;">
+                                <span style="margin-left:24px;">我们选取了多元统计方法中的主成分评价方法对海洋经济可持续发展水平进行了评价说明。主成分综合评价方法是通过对多个相关指标进行降维，生成少数代表性较好的综合指标，这几个指标相互独立且能够解释原来的指标的绝大多数信息。</span><br>
+                            </div>
+                    </div>
+                </div>
+
+
+</body>
+</html>
